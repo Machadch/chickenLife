@@ -30,6 +30,7 @@ hunger = 1000;
 thirst = 1000;
 spd = 1;
 dir = 0;
+data = 0;
 place_free(96,288);
 </string>
           </argument>

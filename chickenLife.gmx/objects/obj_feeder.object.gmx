@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>feedLevel = 10;
+            <string>feedLevel = 0;
 image_speed =0;
 </string>
           </argument>

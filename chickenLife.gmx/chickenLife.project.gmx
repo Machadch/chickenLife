@@ -3,30 +3,39 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\GooglePlayServicesExtension</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_btnStart</sprite>
-    <sprite>sprites\spr_chicken</sprite>
-    <sprite>sprites\spr_chickenEating</sprite>
-    <sprite>sprites\spr_feed</sprite>
-    <sprite>sprites\spr_btnFeed</sprite>
-    <sprite>sprites\spr_waterFull</sprite>
-    <sprite>sprites\spr_waterEmpty</sprite>
-    <sprite>sprites\spr_btnWater</sprite>
-    <sprite>sprites\spr_btnMenu</sprite>
-    <sprite>sprites\spr_btnFood</sprite>
-    <sprite>sprites\spr_menuBG</sprite>
-    <sprite>sprites\spr_subMenu</sprite>
-    <sprite>sprites\spr_coop</sprite>
-    <sprite>sprites\spr_fence</sprite>
-    <sprite>sprites\spr_sky</sprite>
-    <sprite>sprites\spr_coopDoor</sprite>
+    <sprites name="yardEntiries">
+      <sprite>sprites\spr_chickenEating</sprite>
+      <sprite>sprites\spr_btnStart</sprite>
+      <sprite>sprites\spr_feed</sprite>
+      <sprites name="decorations">
+        <sprite>sprites\spr_coop</sprite>
+        <sprite>sprites\spr_coopDoor</sprite>
+        <sprite>sprites\spr_skyMorning</sprite>
+        <sprite>sprites\spr_skyDay</sprite>
+        <sprite>sprites\spr_skyEvening</sprite>
+        <sprite>sprites\spr_skyNight</sprite>
+      </sprites>
+      <sprite>sprites\spr_chicken</sprite>
+      <sprite>sprites\spr_fence</sprite>
+      <sprite>sprites\spr_waterFull</sprite>
+      <sprite>sprites\spr_waterEmpty</sprite>
+    </sprites>
+    <sprites name="menus">
+      <sprite>sprites\spr_btnWater</sprite>
+      <sprite>sprites\spr_btnFood</sprite>
+      <sprite>sprites\spr_btnFeed</sprite>
+      <sprite>sprites\spr_subMenu</sprite>
+      <sprite>sprites\spr_btnMenu</sprite>
+      <sprite>sprites\spr_menuBG</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths">
-    <path>paths\path0</path>
-  </paths>
+  <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="chickenLogic">
       <script>scripts\scr_chickenIdle.gml</script>
