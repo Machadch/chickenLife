@@ -1,14 +1,19 @@
-self.hunger -= .15
-self.thirst -= .25
+self.hunger -= .005
+self.thirst -= .02
 image_speed = .05
-
-if (self.hunger <= 50 and self.hunger < self.thirst) {
+if (self.hunger <0) self.hunger = 0;
+if (self.thirst < -1) self.thirst = -1;
+if (self.hunger <= 5 and self.hunger < self.thirst) {
 state = states.hungry;
 } 
-else if (self.thirst <= 50 and self.thirst < self.hunger) {
+else if (self.thirst <= 0 and self.thirst < self.hunger) {
 state = states.thirsty;
 } 
 else {
-var dir = point_direction(x,y,random(room_width),random(room_height));
-motion_set(dir,spd);
+
+if (random(200)) < 10{
+mp_linear_step(random(room_width), random(room_height), 1.5, 1);
+}
+//var dir = point_direction(x,y,random(room_width),random(room_height));
+//motion_set(dir,spd);
 } 

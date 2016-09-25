@@ -11,25 +11,59 @@
     <sprite>sprites\spr_chickenEating</sprite>
     <sprite>sprites\spr_feed</sprite>
     <sprite>sprites\spr_btnFeed</sprite>
-    <sprite>sprites\spr_water</sprite>
+    <sprite>sprites\spr_waterFull</sprite>
+    <sprite>sprites\spr_waterEmpty</sprite>
     <sprite>sprites\spr_btnWater</sprite>
+    <sprite>sprites\spr_btnMenu</sprite>
+    <sprite>sprites\spr_btnFood</sprite>
+    <sprite>sprites\spr_menuBG</sprite>
+    <sprite>sprites\spr_subMenu</sprite>
+    <sprite>sprites\spr_coop</sprite>
+    <sprite>sprites\spr_fence</sprite>
+    <sprite>sprites\spr_sky</sprite>
+    <sprite>sprites\spr_coopDoor</sprite>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
   <scripts name="scripts">
-    <script>scripts\scr_chickenIdle.gml</script>
-    <script>scripts\scr_chickenHungry.gml</script>
-    <script>scripts\scr_chickenDrinking.gml</script>
-    <script>scripts\scr_chickenThristy.gml</script>
-    <script>scripts\scr_chickenEating.gml</script>
+    <scripts name="chickenLogic">
+      <script>scripts\scr_chickenIdle.gml</script>
+      <script>scripts\scr_chickenHungry.gml</script>
+      <script>scripts\scr_chickenEating.gml</script>
+      <script>scripts\scr_chickenThristy.gml</script>
+      <script>scripts\scr_chickenDrinking.gml</script>
+    </scripts>
+    <scripts name="menuLogic">
+      <script>scripts\scr_subMenuFood.gml</script>
+      <script>scripts\scr_menu.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\obj_btnStart</object>
-    <object>objects\obj_chicken</object>
-    <object>objects\obj_feed</object>
-    <object>objects\obj_water</object>
-    <object>objects\obj_btnFeed</object>
-    <object>objects\obj_btnWater</object>
+    <objects name="misc">
+      <object>objects\obj_btnStart</object>
+      <object>objects\obj_control</object>
+    </objects>
+    <objects name="menu">
+      <object>objects\obj_btnFeed</object>
+      <object>objects\obj_btnWater</object>
+      <object>objects\obj_menuBG</object>
+      <object>objects\obj_subMenu</object>
+      <object>objects\obj_btnFoodMenu</object>
+      <object>objects\obj_btnMenu</object>
+    </objects>
+    <objects name="yardEntities">
+      <object>objects\obj_feeder</object>
+      <object>objects\obj_water</object>
+      <object>objects\obj_chicken</object>
+    </objects>
+    <objects name="decoration">
+      <object>objects\obj_fence</object>
+      <object>objects\obj_sky</object>
+      <object>objects\obj_coop</object>
+      <object>objects\obj_coopDoor</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>

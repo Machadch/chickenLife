@@ -1,13 +1,14 @@
-if instance_exists(obj_feed){
-var dis = point_distance(x,y,obj_feed.x,obj_feed.y);
-var dir = point_direction(x,y,obj_feed.x,obj_feed.y);
+if (self.thirst < -1) self.thirst = -1;
+if (self.hunger < 0) self.hunger = 0;
+if instance_exists(obj_feeder){
+var dis = point_distance(x,y,obj_feeder.x,obj_feeder.y);
+//var dir = point_direction(x,y,obj_feeder.x,obj_feeder.y);
     
 if (dis > 32) {
-    self.hunger -= .10;
-    self.thirst -= .10;
-    motion_set(dir,2);
-    }
-    else {
+    self.thirst -= .02
+    mp_linear_step(obj_feeder.x,obj_feeder.y,1,1);
+}
+else {
     speed = 0;
     state = states.eating;
     }

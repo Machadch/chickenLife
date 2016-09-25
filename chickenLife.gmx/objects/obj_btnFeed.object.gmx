@@ -3,7 +3,7 @@
   <spriteName>spr_btnFeed</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,12 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(obj_feed)){
-instance_create(288,256,obj_feed);
-}
-else {
-with (obj_feed)
-instance_destroy();
+            <string>if (instance_exists(obj_feeder)){
+obj_feeder.feedLevel = 100;
 }
 </string>
           </argument>
