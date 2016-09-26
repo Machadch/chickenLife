@@ -1,4 +1,4 @@
-self.hunger -= 5.005
+self.hunger -= .005
 self.thirst -= .02
 image_speed = .05
 if (self.hunger <0) self.hunger = 0;

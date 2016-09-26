@@ -9,7 +9,7 @@
     <option_android_advertising_type>MoPub</option_android_advertising_type>
     <option_android_amazon_ads>0</option_android_amazon_ads>
     <option_android_amazon_game_circle>0</option_android_amazon_game_circle>
-    <option_android_apk_expansion>-1</option_android_apk_expansion>
+    <option_android_apk_expansion>0</option_android_apk_expansion>
     <option_android_arch_armv5>True</option_android_arch_armv5>
     <option_android_arch_armv7>True</option_android_arch_armv7>
     <option_android_arch_mips>True</option_android_arch_mips>
@@ -28,7 +28,7 @@
     <option_android_google_analytics>0</option_android_google_analytics>
     <option_android_google_analytics_enable>false</option_android_google_analytics_enable>
     <option_android_google_mobile_ads>0</option_android_google_mobile_ads>
-    <option_android_google_play>-1</option_android_google_play>
+    <option_android_google_play>0</option_android_google_play>
     <option_android_google_play_cloud_save_enable>0</option_android_google_play_cloud_save_enable>
     <option_android_google_play_id>31651</option_android_google_play_id>
     <option_android_google_tracking_id></option_android_google_tracking_id>
@@ -41,7 +41,7 @@
     <option_android_icon_xxxhdpi>Configs\Default\android\icons\icon_xxxhdpi.png</option_android_icon_xxxhdpi>
     <option_android_install_location>auto</option_android_install_location>
     <option_android_interpolate>0</option_android_interpolate>
-    <option_android_licensing_enable>-1</option_android_licensing_enable>
+    <option_android_licensing_enable>0</option_android_licensing_enable>
     <option_android_licensing_key>123456</option_android_licensing_key>
     <option_android_major_version>1</option_android_major_version>
     <option_android_min_sdk_version>9</option_android_min_sdk_version>
@@ -60,7 +60,7 @@
     <option_android_package_product>chickenLife</option_android_package_product>
     <option_android_permission_flags>63</option_android_permission_flags>
     <option_android_portrait_splash_png>Configs\Default\android\portrait_splash.png</option_android_portrait_splash_png>
-    <option_android_push_enable>-1</option_android_push_enable>
+    <option_android_push_enable>0</option_android_push_enable>
     <option_android_push_id></option_android_push_id>
     <option_android_scale>-1</option_android_scale>
     <option_android_set_device_id></option_android_set_device_id>
