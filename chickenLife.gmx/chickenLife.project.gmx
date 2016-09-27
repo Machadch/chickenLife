@@ -46,6 +46,9 @@
       <script>scripts\scr_subMenuFood.gml</script>
       <script>scripts\scr_menu.gml</script>
     </scripts>
+    <script>scripts\scr_loadINI.gml</script>
+    <script>scripts\scr_saveINI.gml</script>
+    <script>scripts\scr_handleTimeHunger.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="misc">
@@ -70,6 +73,10 @@
       <object>objects\obj_sky</object>
       <object>objects\obj_coop</object>
       <object>objects\obj_coopDoor</object>
+    </objects>
+    <objects name="debug">
+      <object>objects\iniTestsave</object>
+      <object>objects\iniTestLoad</object>
     </objects>
   </objects>
   <rooms name="rooms">

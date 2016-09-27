@@ -25,7 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>state = states.idle;
+            <string>chickenID =  global.chickenCount + 1;
+global.chickenCount += 1;
+hungerDegrade = .0055
+thirstDegrade = .009
+state = states.idle;
 hunger = 1000;
 thirst = 1000;
 spd = 1;

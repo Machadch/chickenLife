@@ -6,7 +6,7 @@ var dis = point_distance(x,y,obj_feeder.x,obj_feeder.y);
 //var dir = point_direction(x,y,obj_feeder.x,obj_feeder.y);
     
 if (dis > 32) {
-    self.thirst -= .02
+    self.thirst -= self.thirstDegrade;
     mp_linear_step(obj_feeder.x,obj_feeder.y,1,1);
 }
 else {
