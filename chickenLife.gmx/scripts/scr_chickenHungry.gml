@@ -5,7 +5,7 @@ if instance_exists(obj_feeder and obj_feeder.feedLevel > 0){
 var dis = point_distance(x,y,obj_feeder.x,obj_feeder.y);
 //var dir = point_direction(x,y,obj_feeder.x,obj_feeder.y);
     
-if (dis > 32) {
+if (dis > 34) {
     self.thirst -= self.thirstDegrade;
     mp_linear_step(obj_feeder.x,obj_feeder.y,1,1);
 }
@@ -13,7 +13,4 @@ else {
     speed = 0;
     state = states.eating;
     }
-}
-else {
-state = states.idle;
 }

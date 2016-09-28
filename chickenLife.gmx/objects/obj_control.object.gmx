@@ -51,7 +51,7 @@ alarm[0] = 150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.savedTime = date_get_second(date_current_datetime());
+            <string>global.savedTime = date_current_datetime();
 alarm[0] = 150;
 </string>
           </argument>
