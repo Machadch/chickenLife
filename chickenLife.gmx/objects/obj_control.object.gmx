@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>currentTime = 0;
+            <string>pauseHunger = 0;
+global.osPause = 0;
+currentTime = 0;
 global.chickenCount = 0;
 global.savedTime = 0;
 global.loadDiff = 0;
@@ -52,8 +54,10 @@ alarm[0] = 150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.savedTime = date_current_datetime();
+            <string>if (global.osPause == 0) {
+global.savedTime = date_current_datetime();
 alarm[0] = 150;
+}
 </string>
           </argument>
         </arguments>
@@ -77,16 +81,17 @@ alarm[0] = 150;
           <argument>
             <kind>1</kind>
             <string>if (os_is_paused()) {
-//scr_handleTimeHunger();
-currentTime = date_current_datetime();
+global.osPause = 1;
 }
 
-if (currentTime &gt; 0) {
-global.loadDiff =  currentTime - date_current_datetime();
+if (global.osPause = 1) {
+    global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
     if (global.loadDiff &gt; 2 ) {
-obj_chicken.hunger -= (global.loadDiff * (30 * obj_chicken.hungerDegrade));
-currentTime = 0;
-}
+        pauseHunger = (global.loadDiff * (30 * obj_chicken.hungerDegrade));
+        obj_chicken.hunger -= pauseHunger;
+        global.loadDiff = 0;
+        global.osPaused = 0;
+    }
 }
 </string>
           </argument>

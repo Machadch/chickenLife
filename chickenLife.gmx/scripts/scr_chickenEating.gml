@@ -10,7 +10,7 @@ obj_feeder.feedLevel -= 1;
 self.hunger += 1000;
 
 }
-else if (dis > 32) {
+else if (dis > 35) {
 state = states.hungry;
 }
 else {
