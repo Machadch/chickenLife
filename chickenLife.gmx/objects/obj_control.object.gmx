@@ -26,12 +26,75 @@
           <argument>
             <kind>1</kind>
             <string>pauseHunger = 0;
+roundHunger = 0;
+pauseThirst = 0;
+roundThirst = 0;
 global.osPause = 0;
 currentTime = 0;
 global.chickenCount = 0;
 global.savedTime = 0;
 global.loadDiff = 0;
 alarm[0] = 150;
+tmpHunger = 0;
+tmpThirst = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (global.osPause = 1) {
+tmpHunger = obj_chicken.hungerDegrade;
+tmpThirst = obj_chicken.thirstDegrade;
+global.osPause = 0;
+    global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
+    if (global.loadDiff &gt; 2 ) {
+        pauseHunger = ((global.loadDiff * 30) * obj_chicken.hungerDegrade);
+        pauseThirst = ((global.loadDiff * 30) * obj_chicken.thirstDegrade);
+        //Deal with hunger
+            if (obj_chicken.hunger &lt; pauseHunger) {
+            obj_chicken.hunger = 0;
+            roundHunger = (pauseHunger / 100);
+            round(roundHunger);
+            if (obj_feeder.feedLevel &gt;= roundHunger) {
+                obj_feeder.feedLevel -= roundHunger;            
+                }
+            else obj_feeder.feedLevel = 0;
+            }
+        else obj_chicken.hunger -= pauseHunger;
+        //Deal with thirst
+        if (obj_chicken.thirst &lt; pauseThirst) {
+            obj_chicken.thirst = 0;
+            roundThirst = (pauseThirst / 100);
+            round(roundThirst);
+            if (obj_water.waterLevel &gt;= roundThirst) {
+                obj_water.waterLevel -= roundThirst;            
+                }
+            else obj_water.waterLevel = 0;
+            }
+        else obj_chicken.thirst -= pauseThirst;
+        global.loadDiff = 0;
+        global.osPause = 0;
+        obj_chicken.hungerDegrade = tmpHunger;
+        obj_chicken.thirstDegrade = tmpThirst;
+        }
+}
 </string>
           </argument>
         </arguments>
@@ -80,18 +143,14 @@ alarm[0] = 150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (os_is_paused()) {
+            <string> 
+if (os_is_paused()) {
 global.osPause = 1;
+alarm[1] = 30;
 }
 
 if (global.osPause = 1) {
-    global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
-    if (global.loadDiff &gt; 2 ) {
-        pauseHunger = (global.loadDiff * (30 * obj_chicken.hungerDegrade));
-        obj_chicken.hunger -= pauseHunger;
-        global.loadDiff = 0;
-        global.osPaused = 0;
-    }
+
 }
 </string>
           </argument>
