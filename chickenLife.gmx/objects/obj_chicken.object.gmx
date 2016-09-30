@@ -36,6 +36,7 @@ spd = 1;
 dir = 0;
 data = 0;
 place_free(96,288);
+location = 'yard';
 </string>
           </argument>
         </arguments>
@@ -89,6 +90,7 @@ switch (state) {
     case states.eating: scr_chickenEating(); break;
     case states.thirsty: scr_chickenThristy(); break;
     case states.drinking: scr_chickenDrinking(); break;
+    case states.sleeping: scr_chickenSleeping(); break;
 }
 </string>
           </argument>

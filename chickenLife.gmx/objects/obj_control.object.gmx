@@ -62,6 +62,7 @@ tmpThirst = 0;
             <string>if (global.osPause = 1) {
 tmpHunger = obj_chicken.hungerDegrade;
 tmpThirst = obj_chicken.thirstDegrade;
+scr_predatorCheck();
 global.osPause = 0;
     global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
     if (global.loadDiff &gt; 2 ) {
@@ -149,9 +150,7 @@ global.osPause = 1;
 alarm[1] = 30;
 }
 
-if (global.osPause = 1) {
 
-}
 </string>
           </argument>
         </arguments>

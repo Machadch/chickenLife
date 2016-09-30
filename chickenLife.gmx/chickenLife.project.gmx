@@ -24,6 +24,7 @@
       <sprite>sprites\spr_fence</sprite>
       <sprite>sprites\spr_waterFull</sprite>
       <sprite>sprites\spr_waterEmpty</sprite>
+      <sprite>sprites\spr_chickenInvis</sprite>
     </sprites>
     <sprites name="menus">
       <sprite>sprites\spr_btnWater</sprite>
@@ -32,6 +33,7 @@
       <sprite>sprites\spr_subMenu</sprite>
       <sprite>sprites\spr_btnMenu</sprite>
       <sprite>sprites\spr_menuBG</sprite>
+      <sprite>sprites\spr_predStrike</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -42,6 +44,7 @@
       <script>scripts\scr_chickenHungry.gml</script>
       <script>scripts\scr_chickenEating.gml</script>
       <script>scripts\scr_chickenThristy.gml</script>
+      <script>scripts\scr_chickenSleeping.gml</script>
       <script>scripts\scr_chickenDrinking.gml</script>
     </scripts>
     <scripts name="menuLogic">
@@ -51,6 +54,7 @@
     <script>scripts\scr_loadINI.gml</script>
     <script>scripts\scr_saveINI.gml</script>
     <script>scripts\scr_handleTimeHunger.gml</script>
+    <script>scripts\scr_predatorCheck.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="misc">
@@ -64,6 +68,7 @@
       <object>objects\obj_subMenu</object>
       <object>objects\obj_btnFoodMenu</object>
       <object>objects\obj_btnMenu</object>
+      <object>objects\obj_predStrike</object>
     </objects>
     <objects name="yardEntities">
       <object>objects\obj_feeder</object>
