@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>chickenID =  global.chickenCount + 1;
 global.chickenCount += 1;
-hungerDegrade = .0055
-thirstDegrade = .009
+hungerDegrade = .0055;
+thirstDegrade = .009;
 state = states.idle;
 hunger = 1000;
 thirst = 1000;
@@ -37,6 +37,8 @@ dir = 0;
 data = 0;
 place_free(96,288);
 location = 'yard';
+chickenMenu = 'closed';
+name = 'Chicken' + string(chickenID);
 </string>
           </argument>
         </arguments>
@@ -92,6 +94,29 @@ switch (state) {
     case states.drinking: scr_chickenDrinking(); break;
     case states.sleeping: scr_chickenSleeping(); break;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>scr_chickenClick();
 </string>
           </argument>
         </arguments>

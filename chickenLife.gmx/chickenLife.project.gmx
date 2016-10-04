@@ -34,6 +34,7 @@
       <sprite>sprites\spr_btnMenu</sprite>
       <sprite>sprites\spr_menuBG</sprite>
       <sprite>sprites\spr_predStrike</sprite>
+      <sprite>sprites\spr_chickenMenu</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -46,6 +47,7 @@
       <script>scripts\scr_chickenThristy.gml</script>
       <script>scripts\scr_chickenSleeping.gml</script>
       <script>scripts\scr_chickenDrinking.gml</script>
+      <script>scripts\scr_chickenClick.gml</script>
     </scripts>
     <scripts name="menuLogic">
       <script>scripts\scr_subMenuFood.gml</script>
@@ -64,6 +66,7 @@
     <objects name="menu">
       <object>objects\obj_btnFeed</object>
       <object>objects\obj_btnWater</object>
+      <object>objects\obj_chickenMenu</object>
       <object>objects\obj_menuBG</object>
       <object>objects\obj_subMenu</object>
       <object>objects\obj_btnFoodMenu</object>
@@ -89,6 +92,7 @@
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_yard</room>
+    <room>rooms\rm_chickenProfile</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
