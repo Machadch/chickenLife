@@ -35,6 +35,10 @@
       <sprite>sprites\spr_menuBG</sprite>
       <sprite>sprites\spr_predStrike</sprite>
       <sprite>sprites\spr_chickenMenu</sprite>
+      <sprite>sprites\spr_hungerIcon</sprite>
+      <sprite>sprites\spr_thirstIcon</sprite>
+      <sprite>sprites\spr_menuClose</sprite>
+      <sprite>sprites\spr_profileBorder</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -62,6 +66,7 @@
     <objects name="misc">
       <object>objects\obj_btnStart</object>
       <object>objects\obj_control</object>
+      <object>objects\obj_profileControl</object>
     </objects>
     <objects name="menu">
       <object>objects\obj_btnFeed</object>
@@ -72,6 +77,8 @@
       <object>objects\obj_btnFoodMenu</object>
       <object>objects\obj_btnMenu</object>
       <object>objects\obj_predStrike</object>
+      <object>objects\obj_btnMenuClose</object>
+      <object>objects\obj_hungerIcon</object>
     </objects>
     <objects name="yardEntities">
       <object>objects\obj_feeder</object>

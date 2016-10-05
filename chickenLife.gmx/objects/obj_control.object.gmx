@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -37,6 +37,7 @@ global.loadDiff = 0;
 alarm[0] = 150;
 tmpHunger = 0;
 tmpThirst = 0;
+global.menuID = 0;
 </string>
           </argument>
         </arguments>
