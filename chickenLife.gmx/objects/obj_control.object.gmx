@@ -25,19 +25,20 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pauseHunger = 0;
+            <string>if (file_exists("save.ini")) scr_loadINI();
+pauseHunger = 0;
 roundHunger = 0;
 pauseThirst = 0;
 roundThirst = 0;
-global.osPause = 0;
 currentTime = 0;
 global.chickenCount = 0;
-global.savedTime = 0;
 global.loadDiff = 0;
 alarm[0] = 150;
 tmpHunger = 0;
 tmpThirst = 0;
 global.menuID = 0;
+//global.osPause = 0;
+//global.savedTime = 0;
 </string>
           </argument>
         </arguments>
@@ -145,10 +146,10 @@ alarm[0] = 150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> 
-if (os_is_paused()) {
+            <string> if (os_is_paused()) {
 global.osPause = 1;
 alarm[1] = 30;
+scr_saveINI();
 }
 
 
