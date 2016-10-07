@@ -59,6 +59,7 @@
       <script>scripts\scr_subMenuFood.gml</script>
       <script>scripts\scr_menu.gml</script>
     </scripts>
+    <script>scripts\scr_chickenSpawner.gml</script>
     <script>scripts\scr_loadINI.gml</script>
     <script>scripts\scr_saveINI.gml</script>
     <script>scripts\scr_handleTimeHunger.gml</script>
@@ -97,6 +98,7 @@
       <object>objects\iniTestsave</object>
       <object>objects\iniTestLoad</object>
     </objects>
+    <object>objects\obj_globalHolder</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
