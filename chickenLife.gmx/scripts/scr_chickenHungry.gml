@@ -7,7 +7,7 @@ var dis = point_distance(x,y,obj_feeder.x,obj_feeder.y);
     
 if (dis > 34) {
     self.thirst -= self.thirstDegrade;
-    mp_linear_step(obj_feeder.x,obj_feeder.y,1,1);
+    mp_linear_step(obj_feeder.x,obj_feeder.y,1,0);
 }
 else {
     speed = 0;

@@ -152,7 +152,9 @@ alarm[1] = 30;
 scr_saveINI();
 }
 
-
+if (global.iniLoad = 1) {
+instance_create(128,128,obj_predStrike);
+}
 </string>
           </argument>
         </arguments>

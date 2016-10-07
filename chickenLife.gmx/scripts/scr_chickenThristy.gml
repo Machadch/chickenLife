@@ -4,9 +4,9 @@ if instance_exists(obj_water){
 var dis = point_distance(x,y,obj_water.x,obj_water.y);
 var dir = point_direction(x,y,obj_water.x,obj_water.y);
     
-if (dis > 32) {
+if (dis > 36) {
     self.hunger -= self.hungerDegrade;
-mp_linear_step(obj_water.x,obj_water.y,1,1);
+mp_linear_step(obj_water.x,obj_water.y,1,0);
     }
     else {
     speed = 0;

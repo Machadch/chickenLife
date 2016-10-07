@@ -41,7 +41,9 @@
       <sprite>sprites\spr_profileBorder</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_chickenProfile</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="chickenLogic">

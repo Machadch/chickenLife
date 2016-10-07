@@ -12,7 +12,7 @@ state = states.thirsty;
 else {
 
 if (random(200)) < 10{
-mp_linear_step(random(room_width), random(room_height), 1.5, 1);
+mp_linear_step(random(room_width), random(room_height), 1.5, 0);
 }
 //var dir = point_direction(x,y,random(room_width),random(room_height));
 //motion_set(dir,spd);

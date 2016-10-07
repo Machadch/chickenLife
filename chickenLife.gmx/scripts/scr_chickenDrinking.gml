@@ -8,7 +8,7 @@ self.image_index = spr_chickenEating;
 self.thirst += 500;
 obj_water.waterLevel -= 1;
 }
-else if (dis > 32) {
+else if (dis > 36 and self.thirst < 1000) {
 state = states.thirsty;
 }
 else {
