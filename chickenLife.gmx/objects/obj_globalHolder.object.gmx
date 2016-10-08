@@ -29,6 +29,7 @@
 global.loadDiff = 0;
 global.menuID = 0;
 global.debug = 0;
+global.osPause = 0;
 </string>
           </argument>
         </arguments>
