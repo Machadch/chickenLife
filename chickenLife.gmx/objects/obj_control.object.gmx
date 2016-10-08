@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>if (file_exists("save.ini")) scr_loadINI();
+global.debug = 0;
 pauseHunger = 0;
 roundHunger = 0;
 pauseThirst = 0;
@@ -61,7 +62,6 @@ tmpThirst = 0;
             <string>if (global.osPause = 1) {
 tmpHunger = obj_chicken.hungerDegrade;
 tmpThirst = obj_chicken.thirstDegrade;
-scr_predatorCheck();
 global.osPause = 0;
     global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
     if (global.loadDiff &gt; 2 ) {
@@ -147,11 +147,6 @@ alarm[0] = 150;
 global.osPause = 1;
 alarm[1] = 30;
 scr_saveINI();
-}
-
-if (global.iniLoad = 1) {
-instance_create(128,128,obj_predStrike);
-global.iniLoad = 0;
 }
 </string>
           </argument>

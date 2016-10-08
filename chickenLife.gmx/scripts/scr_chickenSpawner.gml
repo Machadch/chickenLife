@@ -1,7 +1,7 @@
 sHunger = argument[0];
 sThirst = argument[1];
 
-var chx_inst = instance_create(x,y,obj_chicken);
+var chx_inst = instance_create(96 + random(300),256 + random(400),obj_chicken);
 chx_inst.hunger = argument[0];
 chx_inst.thirst = argument[1];
 

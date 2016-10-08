@@ -162,9 +162,12 @@ switch (state) {
           <argument>
             <kind>1</kind>
             <string>if (room = rm_yard) { 
-draw_self();
-draw_text(self.x-16,self.y-64,'Hunger: ' + string(hunger));
-draw_text(self.x-16,self.y-32,'Thirst: ' + string(thirst));
+    draw_self();
+    if (global.debug = 1) {
+        draw_text(self.x-16,self.y-64,'Hunger: ' + string(hunger));
+        draw_text(self.x-16,self.y-32,'Thirst: ' + string(thirst));
+        draw_text(self.x-16,self.y-96,'ID: ' + string(self.id));
+    }
 }
 </string>
           </argument>

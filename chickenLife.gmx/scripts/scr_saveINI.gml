@@ -3,7 +3,6 @@ var exitTime = global.savedTime
 ini_open(working_directory + "save.ini");
 ini_write_real("Pause Date","Pause",exitTime);
 ini_write_real("Chicken global","Count",global.chickenCount);
-ini_write_real("Test","Test",1);
 ini_write_real("Chicken","hunger",obj_chicken.hunger);
 ini_write_real("Chicken","thirst",obj_chicken.thirst);
 ini_close();
