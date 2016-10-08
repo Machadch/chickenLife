@@ -77,7 +77,11 @@ if (feedLevel = 0) image_index = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room = rm_yard) { 
+            <string>if (room = rm_yard and global.debug = 1) { 
+draw_self();
+draw_text(x, y -32, self.feedLevel);
+}
+else if (room = rm_yard) {
 draw_self();
 }
 </string>

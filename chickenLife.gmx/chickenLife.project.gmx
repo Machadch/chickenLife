@@ -8,18 +8,19 @@
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprites name="decorations">
+      <sprite>sprites\spr_coop</sprite>
+      <sprite>sprites\spr_coopDoor</sprite>
+      <sprite>sprites\spr_skyMorning</sprite>
+      <sprite>sprites\spr_cloud</sprite>
+      <sprite>sprites\spr_skyDay</sprite>
+      <sprite>sprites\spr_skyEvening</sprite>
+      <sprite>sprites\spr_skyNight</sprite>
+    </sprites>
     <sprites name="yardEntiries">
       <sprite>sprites\spr_chickenEating</sprite>
       <sprite>sprites\spr_btnStart</sprite>
       <sprite>sprites\spr_feed</sprite>
-      <sprites name="decorations">
-        <sprite>sprites\spr_coop</sprite>
-        <sprite>sprites\spr_coopDoor</sprite>
-        <sprite>sprites\spr_skyMorning</sprite>
-        <sprite>sprites\spr_skyDay</sprite>
-        <sprite>sprites\spr_skyEvening</sprite>
-        <sprite>sprites\spr_skyNight</sprite>
-      </sprites>
       <sprite>sprites\spr_chicken</sprite>
       <sprite>sprites\spr_fence</sprite>
       <sprite>sprites\spr_waterFull</sprite>
@@ -43,12 +44,14 @@
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_chickenProfile</background>
+    <background>background\bg_diamond</background>
+    <background>background\bg_cupcakes</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="chickenLogic">
       <script>scripts\scr_chickenIdle.gml</script>
+      <script>scripts\scr_chickenSpawner.gml</script>
       <script>scripts\scr_chickenHungry.gml</script>
       <script>scripts\scr_chickenEating.gml</script>
       <script>scripts\scr_chickenThristy.gml</script>
@@ -60,18 +63,15 @@
       <script>scripts\scr_subMenuFood.gml</script>
       <script>scripts\scr_menu.gml</script>
     </scripts>
-    <script>scripts\scr_chickenSpawner.gml</script>
-    <script>scripts\scr_loadINI.gml</script>
-    <script>scripts\scr_saveINI.gml</script>
-    <script>scripts\scr_handleTimeHunger.gml</script>
+    <scripts name="Load/Save">
+      <script>scripts\scr_loadINI.gml</script>
+      <script>scripts\scr_saveINI.gml</script>
+    </scripts>
     <script>scripts\scr_predatorCheck.gml</script>
+    <script>scripts\scr_yardSpawn.gml</script>
+    <script>scripts\scr_cloudSpawn.gml</script>
   </scripts>
   <objects name="objects">
-    <objects name="misc">
-      <object>objects\obj_btnStart</object>
-      <object>objects\obj_control</object>
-      <object>objects\obj_profileControl</object>
-    </objects>
     <objects name="menu">
       <object>objects\obj_btnFeed</object>
       <object>objects\obj_btnWater</object>
@@ -84,6 +84,7 @@
       <object>objects\obj_predStrike</object>
       <object>objects\obj_btnMenuClose</object>
       <object>objects\obj_hungerIcon</object>
+      <object>objects\obj_btnStart</object>
     </objects>
     <objects name="yardEntities">
       <object>objects\obj_feeder</object>
@@ -95,12 +96,17 @@
       <object>objects\obj_sky</object>
       <object>objects\obj_coop</object>
       <object>objects\obj_coopDoor</object>
+      <object>objects\obj_cloud</object>
     </objects>
     <objects name="debug">
       <object>objects\iniTestsave</object>
       <object>objects\iniTestLoad</object>
     </objects>
-    <object>objects\obj_globalHolder</object>
+    <objects name="control">
+      <object>objects\obj_control</object>
+      <object>objects\obj_globalHolder</object>
+      <object>objects\obj_profileControl</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>

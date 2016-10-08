@@ -7,7 +7,7 @@ if (dis <= 34 and self.hunger <= 1000 and obj_feeder.feedLevel > 0) {
 self.image_index = spr_chickenEating;
 image_speed = 0.10;
 obj_feeder.feedLevel -= 1;
-self.hunger += 1000;
+self.hunger += 500;
 
 }
 else if (dis > 35) {

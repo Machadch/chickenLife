@@ -75,7 +75,11 @@ else if (waterLevel &lt; 1) image_index = spr_waterEmpty;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room = rm_yard) { 
+            <string>if (room = rm_yard and global.debug = 1) { 
+draw_self();
+draw_text(x, y -32, self.waterLevel);
+}
+else if (room = rm_yard) {
 draw_self();
 }
 </string>

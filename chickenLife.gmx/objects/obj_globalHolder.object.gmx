@@ -28,6 +28,7 @@
             <string>global.chickenCount = 0;
 global.loadDiff = 0;
 global.menuID = 0;
+global.debug = 0;
 </string>
           </argument>
         </arguments>

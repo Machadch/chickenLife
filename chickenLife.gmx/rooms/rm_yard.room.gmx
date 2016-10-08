@@ -59,9 +59,7 @@
   </views>
   <instances>
     <instance objName="obj_control" x="32" y="768" name="inst_91512D18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_feeder" x="320" y="288" name="inst_5086F6FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_btnMenu" x="32" y="32" name="inst_9CE2D488" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_water" x="128" y="704" name="inst_490AF8A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coop" x="32" y="96" name="inst_950E520F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="192" y="192" name="inst_CE6A5C5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="224" y="192" name="inst_BB1E9C24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -81,6 +79,7 @@
     <instance objName="obj_fence" x="128" y="192" name="inst_6FA80A6B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_fence" x="160" y="192" name="inst_E6A1A598" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coopDoor" x="64" y="192" name="inst_DF17187A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cloud" x="-64" y="0" name="inst_14C4E32D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
