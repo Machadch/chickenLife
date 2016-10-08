@@ -5,7 +5,7 @@ global.iniLoad = (ini_read_real("Test","Test",0));
 chickenSpawn = (ini_read_real("Chicken global","Count",0));
 var i;
 for (i = 0; i <= chickenSpawn; i++) {
-scr_chickenSpawner();
+scr_chickenSpawner(ini_read_real("Chicken","hunger",250),ini_read_real("Chicken","thirst",250));
 }
 
 global.osPause = 1;
