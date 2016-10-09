@@ -11,9 +11,26 @@ state = states.thirsty;
 } 
 else {
 
-if (random(200)) < 10{
-mp_linear_step(random(room_width), random(room_height), 1.5, 0);
+if (random(500)) < 5{
+var dir = point_direction(x,y,random(room_width),256 + random(400));
+if( dir <= 45 or dir > 300) {
+    dir = 0;
+    self.sprite_index = spr_chxRight;
+  }
+  if(dir <= 135 and dir > 45) {
+    dir = 90;
+    self.sprite_index = spr_chxUp;
+  }
+  if(dir <= 225 and dir > 135) {
+    dir = 180;
+    self.sprite_index = spr_chxLeft;
+  }
+  if(dir <= 300 and dir > 225) {
+    dir = 270;
+    self.sprite_index = spr_chxDown;
+  }
+    spd = 1;
+    motion_set(dir,spd);
+    }
+if (self.y < 256) self.y = 256;
 }
-//var dir = point_direction(x,y,random(room_width),random(room_height));
-//motion_set(dir,spd);
-} 
