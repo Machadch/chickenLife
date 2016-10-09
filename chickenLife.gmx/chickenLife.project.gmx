@@ -10,6 +10,7 @@
   <sprites name="sprites">
     <sprites name="decorations">
       <sprite>sprites\spr_coop</sprite>
+      <sprite>sprites\sprite33</sprite>
       <sprite>sprites\spr_coopDoor</sprite>
       <sprite>sprites\spr_skyMorning</sprite>
       <sprite>sprites\spr_cloud</sprite>
@@ -48,10 +49,12 @@
       <sprite>sprites\spr_chxLeft</sprite>
       <sprite>sprites\spr_chxRight</sprite>
     </sprites>
+    <sprite>sprites\spr_nestBox</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_diamond</background>
     <background>background\bg_cupcakes</background>
+    <background>background\bg_eggs</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -74,8 +77,10 @@
       <script>scripts\scr_saveINI.gml</script>
     </scripts>
     <script>scripts\scr_predatorCheck.gml</script>
-    <script>scripts\scr_yardSpawn.gml</script>
-    <script>scripts\scr_cloudSpawn.gml</script>
+    <scripts name="Spawning">
+      <script>scripts\scr_yardSpawn.gml</script>
+      <script>scripts\scr_cloudSpawn.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="menu">
@@ -96,11 +101,15 @@
       <object>objects\obj_feeder</object>
       <object>objects\obj_water</object>
       <object>objects\obj_chicken</object>
+      <objects name="nestBox">
+        <object>objects\nestBox</object>
+      </objects>
     </objects>
     <objects name="decoration">
       <object>objects\obj_fence</object>
       <object>objects\obj_sky</object>
       <object>objects\obj_coop</object>
+      <object>objects\obj_roost</object>
       <object>objects\obj_coopDoor</object>
       <object>objects\obj_cloud</object>
     </objects>
@@ -118,6 +127,7 @@
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_yard</room>
     <room>rooms\rm_chickenProfile</room>
+    <room>rooms\rm_nestBox</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

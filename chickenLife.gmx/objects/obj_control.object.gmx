@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>scr_yardSpawn();
 if (file_exists("save.ini")) scr_loadINI();
-else {
+else if (!file_exists("save.ini")){ 
 scr_chickenSpawner(1000,1000);
 scr_chickenSpawner(1000,1000);
 }

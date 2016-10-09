@@ -80,6 +80,7 @@
     <instance objName="obj_fence" x="160" y="192" name="inst_E6A1A598" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_coopDoor" x="64" y="192" name="inst_DF17187A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cloud" x="-64" y="0" name="inst_14C4E32D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_roost" x="224" y="192" name="inst_A1FCC367" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
