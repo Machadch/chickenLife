@@ -153,7 +153,7 @@ alarm[1] = 30;
 scr_saveINI();
 }
 
-if (irandom(105) = 5) scr_cloudSpawn();
+if (irandom(255) = 5) scr_cloudSpawn();
 </string>
           </argument>
         </arguments>
