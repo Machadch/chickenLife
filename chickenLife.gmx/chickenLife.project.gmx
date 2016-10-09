@@ -31,6 +31,7 @@
     <sprites name="menus">
       <sprite>sprites\spr_btnWater</sprite>
       <sprite>sprites\spr_btnFood</sprite>
+      <sprite>sprites\spr_btnInventory</sprite>
       <sprite>sprites\spr_btnFeed</sprite>
       <sprite>sprites\spr_buttonDebug</sprite>
       <sprite>sprites\spr_subMenu</sprite>
@@ -50,11 +51,13 @@
       <sprite>sprites\spr_chxRight</sprite>
     </sprites>
     <sprite>sprites\spr_nestBox</sprite>
+    <sprite>sprites\spr_egg</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_diamond</background>
     <background>background\bg_cupcakes</background>
     <background>background\bg_eggs</background>
+    <background>background\bg_inventory</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -96,6 +99,7 @@
       <object>objects\obj_btnMenuClose</object>
       <object>objects\obj_hungerIcon</object>
       <object>objects\obj_btnStart</object>
+      <object>objects\obj_btnInventory</object>
     </objects>
     <objects name="yardEntities">
       <object>objects\obj_feeder</object>
@@ -103,6 +107,7 @@
       <object>objects\obj_chicken</object>
       <objects name="nestBox">
         <object>objects\nestBox</object>
+        <object>objects\obj_egg</object>
       </objects>
     </objects>
     <objects name="decoration">
@@ -121,6 +126,7 @@
       <object>objects\obj_control</object>
       <object>objects\obj_globalHolder</object>
       <object>objects\obj_profileControl</object>
+      <object>objects\obj_inventory</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -128,6 +134,7 @@
     <room>rooms\rm_yard</room>
     <room>rooms\rm_chickenProfile</room>
     <room>rooms\rm_nestBox</room>
+    <room>rooms\rm_inventory</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

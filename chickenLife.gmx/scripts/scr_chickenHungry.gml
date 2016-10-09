@@ -3,7 +3,6 @@ if (self.hunger < 0) self.hunger = 0;
 
 if instance_exists(obj_feeder and obj_feeder.feedLevel > 0){
 var dis = point_distance(x,y,obj_feeder.x,obj_feeder.y);
-//var dir = point_direction(x,y,obj_feeder.x,obj_feeder.y);
     
 if (dis > 34) {
     self.thirst -= self.thirstDegrade;
