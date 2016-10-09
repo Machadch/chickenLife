@@ -35,10 +35,38 @@ thirst = 1000;
 spd = 1;
 dir = 0;
 data = 0;
+layDate = 0;
 place_free(96,288);
 location = 'yard';
 chickenMenu = 'closed';
 name = 'Chicken' + string(chickenID);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>self.location = "yard";
+self.visible = true;
+state = states.idle;
+x = 256;
+y = 288;
 </string>
           </argument>
         </arguments>
@@ -118,6 +146,7 @@ switch (state) {
     case states.thirsty: scr_chickenThristy(); break;
     case states.drinking: scr_chickenDrinking(); break;
     case states.sleeping: scr_chickenSleeping(); break;
+    case states.laying: scr_chickenLaying(); break;
 }
 switch (direction div 90) {
 case 0: sprite_index = spr_chxRight; break;
@@ -192,6 +221,7 @@ case 3: sprite_index = spr_chxDown; break;
         draw_text(self.x-16,self.y-64,'Hunger: ' + string(hunger));
         draw_text(self.x-16,self.y-32,'Thirst: ' + string(thirst));
         draw_text(self.x-16,self.y-96,'ID: ' + string(self.id));
+        draw_text(self.x-16,self.y-128,'Lay date: ' + string(self.layDate));
     }
 }
 </string>

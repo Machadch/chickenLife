@@ -27,8 +27,9 @@
             <kind>1</kind>
             <string>// Inventory list
 // 0,0 = eggs
-
+// 1,0 = currency
 inventoryArray[0,0] = 0;
+inventoryArray[1,0] = 0;
 </string>
           </argument>
         </arguments>
@@ -53,9 +54,10 @@ inventoryArray[0,0] = 0;
             <kind>1</kind>
             <string>if (room = rm_inventory) {
     if (obj_inventory.inventoryArray[0,0] &gt; 0) {
-        draw_sprite(spr_egg,0,128,128);
-        draw_text(150,136," X " + string(obj_inventory.inventoryArray[0,0]));
+        draw_sprite(spr_egg,0,64,128);
+        draw_text(128,136," X " + string(obj_inventory.inventoryArray[0,0]));
         }
+    draw_text(64,64,"Currency: " + string(obj_inventory.inventoryArray[1,0]))
     }
     
 </string>

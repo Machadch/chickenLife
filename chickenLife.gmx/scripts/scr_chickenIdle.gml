@@ -9,6 +9,9 @@ state = states.hungry;
 else if (self.thirst <= 0 and self.thirst < self.hunger) {
 state = states.thirsty;
 } 
+else if (self.thirst > 750 and self.hunger > 750 and self.layDate < current_day){
+    state = states.laying;
+}
 else {
 
 if (random(500)) < 5{

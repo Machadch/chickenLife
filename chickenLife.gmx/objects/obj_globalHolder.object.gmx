@@ -30,6 +30,9 @@ global.loadDiff = 0;
 global.menuID = 0;
 global.debug = 0;
 global.osPause = 0;
+global.eggsLaid = 0;
+global.savedTime = 0;
+global.eggsSpawned = 0;
 </string>
           </argument>
         </arguments>

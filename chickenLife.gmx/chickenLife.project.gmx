@@ -69,6 +69,7 @@
       <script>scripts\scr_chickenThristy.gml</script>
       <script>scripts\scr_chickenSleeping.gml</script>
       <script>scripts\scr_chickenDrinking.gml</script>
+      <script>scripts\scr_chickenLaying.gml</script>
       <script>scripts\scr_chickenClick.gml</script>
     </scripts>
     <scripts name="menuLogic">

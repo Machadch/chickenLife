@@ -147,13 +147,18 @@ alarm[0] = 150;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string> if (os_is_paused()) {
-global.osPause = 1;
-alarm[1] = 30;
-scr_saveINI();
+            <string>if (os_is_paused()) {
+    global.osPause = 1;
+    alarm[1] = 30;
+    scr_saveINI();
 }
 
 if (irandom(255) = 5) scr_cloudSpawn();
+
+if (room = rm_nestBox and global.eggsLaid &gt; global.eggsSpawned) {
+    instance_create(32,32,obj_egg);
+    global.eggsSpawned += 1;
+}
 </string>
           </argument>
         </arguments>
