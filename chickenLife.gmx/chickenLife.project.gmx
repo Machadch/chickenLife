@@ -20,7 +20,10 @@
     </sprites>
     <sprites name="yardEntiries">
       <sprite>sprites\spr_chickenEating</sprite>
-      <sprite>sprites\spr_btnStart</sprite>
+      <sprites name="nestBox">
+        <sprite>sprites\spr_nestBox</sprite>
+        <sprite>sprites\spr_egg</sprite>
+      </sprites>
       <sprite>sprites\spr_feed</sprite>
       <sprite>sprites\spr_chicken</sprite>
       <sprite>sprites\spr_fence</sprite>
@@ -32,13 +35,15 @@
       <sprite>sprites\spr_btnWater</sprite>
       <sprite>sprites\spr_btnFood</sprite>
       <sprite>sprites\spr_btnInventory</sprite>
+      <sprite>sprites\spr_btnStart</sprite>
       <sprite>sprites\spr_btnFeed</sprite>
       <sprite>sprites\spr_buttonDebug</sprite>
       <sprite>sprites\spr_subMenu</sprite>
       <sprite>sprites\spr_btnMenu</sprite>
       <sprite>sprites\spr_menuBG</sprite>
       <sprite>sprites\spr_predStrike</sprite>
-      <sprite>sprites\spr_chickenMenu</sprite>
+      <sprite>sprites\spr_sell</sprite>
+      <sprite>sprites\spr_buyChicken</sprite>
       <sprite>sprites\spr_hungerIcon</sprite>
       <sprite>sprites\spr_thirstIcon</sprite>
       <sprite>sprites\spr_menuClose</sprite>
@@ -50,8 +55,6 @@
       <sprite>sprites\spr_chxLeft</sprite>
       <sprite>sprites\spr_chxRight</sprite>
     </sprites>
-    <sprite>sprites\spr_nestBox</sprite>
-    <sprite>sprites\spr_egg</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_diamond</background>
@@ -63,11 +66,9 @@
   <scripts name="scripts">
     <scripts name="chickenLogic">
       <script>scripts\scr_chickenIdle.gml</script>
-      <script>scripts\scr_chickenSpawner.gml</script>
       <script>scripts\scr_chickenHungry.gml</script>
       <script>scripts\scr_chickenEating.gml</script>
       <script>scripts\scr_chickenThristy.gml</script>
-      <script>scripts\scr_chickenSleeping.gml</script>
       <script>scripts\scr_chickenDrinking.gml</script>
       <script>scripts\scr_chickenLaying.gml</script>
       <script>scripts\scr_chickenClick.gml</script>
@@ -84,6 +85,7 @@
     <scripts name="Spawning">
       <script>scripts\scr_yardSpawn.gml</script>
       <script>scripts\scr_cloudSpawn.gml</script>
+      <script>scripts\scr_chickenSpawner.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -101,6 +103,8 @@
       <object>objects\obj_hungerIcon</object>
       <object>objects\obj_btnStart</object>
       <object>objects\obj_btnInventory</object>
+      <object>objects\obj_btnInvSell</object>
+      <object>objects\obj_btnBuyChicken</object>
     </objects>
     <objects name="yardEntities">
       <object>objects\obj_feeder</object>

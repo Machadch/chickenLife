@@ -145,7 +145,6 @@ switch (state) {
     case states.eating: scr_chickenEating(); break;
     case states.thirsty: scr_chickenThristy(); break;
     case states.drinking: scr_chickenDrinking(); break;
-    case states.sleeping: scr_chickenSleeping(); break;
     case states.laying: scr_chickenLaying(); break;
 }
 switch (direction div 90) {
@@ -154,6 +153,7 @@ case 1: sprite_index = spr_chxUp; break;
 case 2: sprite_index = spr_chxLeft; break;
 case 3: sprite_index = spr_chxDown; break;
 }
+
 </string>
           </argument>
         </arguments>
@@ -215,12 +215,12 @@ case 3: sprite_index = spr_chxDown; break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room = rm_yard) { 
+            <string>if (room = rm_yard and self.location = 'yard') { 
     draw_self();
     if (global.debug = 1) {
         draw_text(self.x-16,self.y-64,'Hunger: ' + string(hunger));
         draw_text(self.x-16,self.y-32,'Thirst: ' + string(thirst));
-        draw_text(self.x-16,self.y-96,'ID: ' + string(self.id));
+        draw_text(self.x-16,self.y-96,'State: ' + string(self.state));
         draw_text(self.x-16,self.y-128,'Lay date: ' + string(self.layDate));
     }
 }

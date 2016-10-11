@@ -159,6 +159,10 @@ if (room = rm_nestBox and global.eggsLaid &gt; global.eggsSpawned) {
     instance_create(32,32,obj_egg);
     global.eggsSpawned += 1;
 }
+
+
+
+
 </string>
           </argument>
         </arguments>

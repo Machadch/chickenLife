@@ -58,6 +58,13 @@ for(i = 0; i &lt; thirstLife; i++) {
     draw_sprite(spr_thirstIcon, 0, (xPos + gapSize), yPos);
   }
 draw_text(32,448,"Thirst Level:");
+
+if ((global.menuID).layDate &lt; current_day) {
+draw_text(32,550,"Laid today: No");
+}
+else {
+draw_text(32,550,"Laid today: Yes");
+}
 </string>
           </argument>
         </arguments>
