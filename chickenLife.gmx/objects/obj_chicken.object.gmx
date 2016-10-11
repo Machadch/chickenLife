@@ -146,6 +146,7 @@ switch (state) {
     case states.thirsty: scr_chickenThristy(); break;
     case states.drinking: scr_chickenDrinking(); break;
     case states.laying: scr_chickenLaying(); break;
+    case states.sleeping: scr_chickenSleeping(); break;
 }
 switch (direction div 90) {
 case 0: sprite_index = spr_chxRight; break;
