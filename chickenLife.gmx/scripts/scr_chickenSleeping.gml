@@ -1,8 +1,13 @@
 if (current_hour >= 21 or current_hour <=6) {
     mp_linear_step(96,288,2,0);
-    self.location = 'coop';
+        if (obj_coopDoor.door = 'open'){
+        self.location = 'coop';
+        }
     }
     else {
-    self.location = 'yard';
-    state = states.idle;
+        if (self.location = 'coop' and obj_coopDoor.door = 'open') {
+        self.location = 'yard';
+        state = states.idle;
     }
+    
+}

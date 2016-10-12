@@ -17,6 +17,9 @@ else if (self.thirst > 500 and self.hunger > 500 and self.layDate < current_day)
 else if (current_hour >= 21 or current_hour <=6) {
     state = states.sleeping;
     }
+else if (self.location = 'coop') {
+    state = states.sleeping;
+    }
 else {
 if (random(500)) < 5{
 var dir = point_direction(x,y,random(room_width),256 + random(400));

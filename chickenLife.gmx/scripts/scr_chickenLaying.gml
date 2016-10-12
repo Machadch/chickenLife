@@ -13,5 +13,6 @@ if (self.thirst > 750 and self.hunger > 750 and self.layDate < current_day) {
     self.alarm[2] = 60;
     }
     else state = states.idle;
-} 
+}
+else state = states.idle; 
 

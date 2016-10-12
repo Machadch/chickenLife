@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>if (obj_inventory.inventoryArray[1,0] &gt;= 250) {
 obj_inventory.inventoryArray[1,0] -= 250;
-scr_chickenSpawner(1000,1000,0);
+scr_chickenSpawner(1000,1000,0,'yard');
 }
 </string>
           </argument>
