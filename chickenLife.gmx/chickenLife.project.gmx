@@ -48,6 +48,8 @@
       <sprite>sprites\spr_thirstIcon</sprite>
       <sprite>sprites\spr_menuClose</sprite>
       <sprite>sprites\spr_profileBorder</sprite>
+      <sprite>sprites\spr_warnExe</sprite>
+      <sprite>sprites\spr_warnText</sprite>
     </sprites>
     <sprites name="chicken">
       <sprite>sprites\spr_chxUp</sprite>
@@ -61,6 +63,7 @@
     <background>background\bg_cupcakes</background>
     <background>background\bg_eggs</background>
     <background>background\bg_inventory</background>
+    <background>background\bg_doorWarn</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -106,6 +109,7 @@
       <object>objects\obj_btnInventory</object>
       <object>objects\obj_btnInvSell</object>
       <object>objects\obj_btnBuyChicken</object>
+      <object>objects\obj_brnWarn</object>
     </objects>
     <objects name="yardEntities">
       <object>objects\obj_feeder</object>
@@ -141,6 +145,7 @@
     <room>rooms\rm_chickenProfile</room>
     <room>rooms\rm_nestBox</room>
     <room>rooms\rm_inventory</room>
+    <room>rooms\rm_doorWarn</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

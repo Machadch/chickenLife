@@ -31,6 +31,7 @@ else if (!file_exists("save.ini")){
 scr_chickenSpawner(1000,1000);
 scr_chickenSpawner(1000,1000);
 }
+scr_predatorCheck();
 pauseHunger = 0;
 roundHunger = 0;
 pauseThirst = 0;
