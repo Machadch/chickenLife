@@ -5,6 +5,7 @@
   </Configs>
   <NewExtensions>
     <extension index="0">extensions\GooglePlayServicesExtension</extension>
+    <extension index="1">extensions\inputTextEx</extension>
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -102,6 +103,7 @@
       <object>objects\obj_btnFoodMenu</object>
       <object>objects\obj_btnDebug</object>
       <object>objects\obj_btnMenu</object>
+      <object>objects\obj_nameEdit</object>
       <object>objects\obj_predStrike</object>
       <object>objects\obj_btnMenuClose</object>
       <object>objects\obj_hungerIcon</object>
