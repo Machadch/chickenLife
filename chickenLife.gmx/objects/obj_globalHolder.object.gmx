@@ -33,6 +33,7 @@ global.osPause = 0;
 global.eggsLaid = 0;
 global.savedTime = 0;
 global.eggsSpawned = 0;
+global.chickenArray[0,0] = 0;
 </string>
           </argument>
         </arguments>

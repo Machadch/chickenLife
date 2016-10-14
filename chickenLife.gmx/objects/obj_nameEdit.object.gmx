@@ -56,6 +56,7 @@ if i_d == msg
       if ds_map_find_value(async_load, "result") != ""
          {
          global.menuID.name = ds_map_find_value(async_load, "result");
+         global.chickenArray[global.menuID.chickenID,4] =  ds_map_find_value(async_load, "result");
          }
       }
    }

@@ -28,8 +28,8 @@
             <string>scr_yardSpawn();
 if (file_exists("save.ini")) scr_loadINI();
 else if (!file_exists("save.ini")){ 
-scr_chickenSpawner(1000,1000);
-scr_chickenSpawner(1000,1000);
+scr_chickenSpawner(1000,1000,0,"yard","chicken");
+scr_chickenSpawner(1000,1000,0,"yard","chicken");
 }
 scr_predatorCheck();
 pauseHunger = 0;

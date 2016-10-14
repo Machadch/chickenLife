@@ -15,7 +15,9 @@ else if (self.thirst > 500 and self.hunger > 500 and self.layDate < current_day)
     state = states.laying;
 }
 else if (current_hour >= 21 or current_hour <=6) {
-    state = states.sleeping;
+    if (self.layDate < current_day) {
+        state = states.laying;}
+        else state = states.sleeping;
     }
 else if (self.location = 'coop') {
     state = states.sleeping;
