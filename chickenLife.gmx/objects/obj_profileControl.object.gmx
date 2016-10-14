@@ -28,7 +28,7 @@
             <string>draw_sprite_ext((global.menuID).sprite_index,0,128,128,2,2,0,c_white,1);
 image_speed = 0
 draw_sprite(spr_profileBorder,0,128,128);
-draw_text(288,128,string((global.menuID).name));
+draw_text(224,128,string((global.menuID).name));
 
 if ((global.menuID).hunger &gt;= 800) hungerLife = 4;
 else if ((global.menuID).hunger &gt;= 600 and (global.menuID).hunger &lt;= 799 ) hungerLife = 3;

@@ -5,7 +5,6 @@
   </Configs>
   <NewExtensions>
     <extension index="0">extensions\GooglePlayServicesExtension</extension>
-    <extension index="1">extensions\inputTextEx</extension>
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -33,6 +32,7 @@
       <sprite>sprites\spr_chickenInvis</sprite>
     </sprites>
     <sprites name="menus">
+      <sprite>sprites\spr_nameEdit</sprite>
       <sprite>sprites\spr_btnWater</sprite>
       <sprite>sprites\spr_btnFood</sprite>
       <sprite>sprites\spr_btnInventory</sprite>
