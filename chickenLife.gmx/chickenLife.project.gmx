@@ -111,7 +111,7 @@
       <object>objects\obj_btnInventory</object>
       <object>objects\obj_btnInvSell</object>
       <object>objects\obj_btnBuyChicken</object>
-      <object>objects\obj_brnWarn</object>
+      <object>objects\obj_btnWarn</object>
     </objects>
     <objects name="yardEntities">
       <object>objects\obj_feeder</object>
@@ -147,7 +147,6 @@
     <room>rooms\rm_chickenProfile</room>
     <room>rooms\rm_nestBox</room>
     <room>rooms\rm_inventory</room>
-    <room>rooms\rm_doorWarn</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
