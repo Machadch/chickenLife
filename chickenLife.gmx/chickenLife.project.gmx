@@ -65,6 +65,7 @@
     <background>background\bg_eggs</background>
     <background>background\bg_inventory</background>
     <background>background\bg_doorWarn</background>
+    <background>background\bg_farmStore</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

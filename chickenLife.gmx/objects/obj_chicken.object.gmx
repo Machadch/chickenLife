@@ -138,7 +138,14 @@ alarm[1] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (speed &gt; 2) speed = 2
+            <string>if (speed &gt; 2) speed = 2;
+
+global.chickenArray[self.chickenID,0] = self.hunger;
+global.chickenArray[self.chickenID,1] = self.thirst;
+global.chickenArray[self.chickenID,2] = self.layDate;
+global.chickenArray[self.chickenID,3] = self.location;
+
+
 switch (state) {
     case states.idle: scr_chickenIdle(); break;
     case states.hungry: scr_chickenHungry(); break;
