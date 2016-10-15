@@ -151,6 +151,7 @@ alarm[0] = 150;
             <string>if (os_is_paused()) {
     global.osPause = 1;
     alarm[1] = 30;
+    
     scr_saveINI();
 }
 

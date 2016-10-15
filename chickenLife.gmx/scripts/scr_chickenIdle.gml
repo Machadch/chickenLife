@@ -3,7 +3,10 @@ self.thirst -= self.thirstDegrade;
 image_speed = .05
 if (self.hunger <0) self.hunger = 0;
 if (self.thirst < -1) self.thirst = -1;
-
+global.chickenArray[self.chickenID,0] = self.hunger;
+global.chickenArray[self.chickenID,1] = self.thirst;
+global.chickenArray[self.chickenID,2] = self.layDate;
+global.chickenArray[self.chickenID,3] = self.location;
 
 if (self.hunger <= 5 and self.hunger < self.thirst) {
 state = states.hungry;

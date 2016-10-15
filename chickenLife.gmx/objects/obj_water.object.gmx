@@ -49,12 +49,11 @@ image_speed = 0.10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (waterLevel &gt; 1){
+            <string>if (self.waterLevel &gt; 10){
 image_speed = 0.10;
 }
-else if (waterLevel &lt; 1) image_index = spr_waterEmpty;
-
-if (waterLevel &lt; 0) waterLevel = 0;
+else if (self.waterLevel &lt; 10) sprite_index = spr_waterEmpty;
+if (self.waterLevel &lt; 0) waterLevel = 0;
 </string>
           </argument>
         </arguments>
