@@ -18,6 +18,7 @@ global.chickenArray[sCount,1] = argument[1];
 global.chickenArray[sCount,2] = argument[2];
 global.chickenArray[sCount,3] = argument[3];
 global.chickenArray[sCount,4] = argument[4];
+global.chickenArray[sCount,5] = chx_inst;
 
 
 /*

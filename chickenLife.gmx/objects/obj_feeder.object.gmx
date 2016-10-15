@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>feedLevel = 1;
+maxFeed = 10;
 image_speed = 0;
 </string>
           </argument>

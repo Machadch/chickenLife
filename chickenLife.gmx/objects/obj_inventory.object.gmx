@@ -52,7 +52,7 @@ inventoryArray[1,0] = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room = rm_inventory) {
+            <string>if (room = rm_farmStore) {
     draw_sprite(spr_egg,0,64,64);
     draw_set_color(c_white);
     draw_text(128,72," X " + string(obj_inventory.inventoryArray[0,0]));
