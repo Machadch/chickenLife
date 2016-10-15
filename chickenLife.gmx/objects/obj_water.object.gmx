@@ -50,6 +50,7 @@ image_speed = 0.10;
           <argument>
             <kind>1</kind>
             <string>if (self.waterLevel &gt; 10){
+sprite_index = spr_waterFull;
 image_speed = 0.10;
 }
 else if (self.waterLevel &lt; 10) sprite_index = spr_waterEmpty;

@@ -16,6 +16,7 @@ obj_water.waterLevel = ini_read_real("Yard","water",10);
 obj_inventory.inventoryArray[0,0 ] = ini_read_real("Inventory","egg",0);
 obj_inventory.inventoryArray[1,0] = ini_read_real("Inventory","currency",0);
 obj_coopDoor.door = ini_read_string("Yard","Door","open");
+global.eggsLaid = ini_read_real("Chicken global","eggsLaid",0);
 global.osPause = 1;
 obj_control.alarm[1] = 10;
 

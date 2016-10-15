@@ -8,6 +8,7 @@ ini_write_string("Yard","Door",obj_coopDoor.door);
 ini_write_real("Inventory","egg",obj_inventory.inventoryArray[0,0]);
 ini_write_real("Inventory","currency",obj_inventory.inventoryArray[1,0]);
 ini_write_real("Chicken global","Count",global.chickenCount);
+ini_write_real("Chicken global","eggsLaid",global.eggsLaid);
 
 var i;
 for (i = 1; i <= global.chickenCount; i++) {

@@ -115,7 +115,6 @@ alarm[1] = 60;
           <argument>
             <kind>1</kind>
             <string>if (global.osPause = 1) {
-
     global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
     if (global.loadDiff &gt; 2 ) {
         pauseHunger = ((global.loadDiff * 30) *self.hungerDegrade);
@@ -134,10 +133,10 @@ alarm[1] = 60;
             self.hunger = 0;
             }
         //Deal with thirst
-        if (self.thirst &lt; pauseThirst) {
-            remainderThirst = (pauseThirst mod 100);
-            roundThirst = (pauseThirst / 100);
-            round(roundThirst);
+            if (self.thirst &lt; pauseThirst) {
+                remainderThirst = (pauseThirst mod 100);
+                roundThirst = (pauseThirst / 100);
+                round(roundThirst);
             if (obj_water.waterLevel &gt;= roundThirst) {
                 obj_water.waterLevel -= roundThirst;
                 self.thirst = (1000 - remainderThirst);            
@@ -145,8 +144,14 @@ alarm[1] = 60;
             else obj_water.waterLevel = 0;
             self.thirst = 0;        
         }
+    if (self.layDate &lt; current_day) {
+        if (irandom(4) = 1) {
+             global.eggsLaid += 1;
+             self.layDate = current_day;
+            }
+        }
     }
-obj_control.alarm[1] = 0;
+    obj_control.alarm[1] = 0;
 }
 </string>
           </argument>
@@ -256,6 +261,16 @@ case 3: sprite_index = spr_chxDown; break;
           <argument>
             <kind>1</kind>
             <string>if (room = rm_yard and self.location = 'yard') { 
+    draw_self();
+    if (global.debug = 1) {
+        draw_text(self.x-16,self.y-64,'Hunger: ' + string(hunger));
+        draw_text(self.x-16,self.y-32,'Thirst: ' + string(thirst));
+        draw_text(self.x-16,self.y-96,'State: ' + string(self.state));
+        draw_text(self.x-16,self.y-128,'Lay date: ' + string(self.layDate));
+    }
+}
+
+if (room = rm_nestBox and self.location = 'roost') { 
     draw_self();
     if (global.debug = 1) {
         draw_text(self.x-16,self.y-64,'Hunger: ' + string(hunger));
