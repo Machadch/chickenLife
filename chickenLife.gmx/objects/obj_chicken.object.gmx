@@ -114,8 +114,40 @@ alarm[1] = 60;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//alarm
+            <string>if (global.osPause = 1) {
 
+    global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
+    if (global.loadDiff &gt; 2 ) {
+        pauseHunger = ((global.loadDiff * 30) *self.hungerDegrade);
+        pauseThirst = ((global.loadDiff * 30) * self.thirstDegrade);
+        //Deal with hunger
+            if (self.hunger &lt; pauseHunger) {
+            remainderHunger = (pauseHunger mod 100);
+            roundHunger = (pauseHunger / 100);
+            round(roundHunger);
+            roundHunger = roundHunger * 2;
+            if (obj_feeder.feedLevel &gt;= roundHunger) {
+                obj_feeder.feedLevel -= roundHunger;
+                self.hunger = (1000 - remainderHunger);            
+                }
+            else obj_feeder.feedLevel = 0;
+            self.hunger = 0;
+            }
+        //Deal with thirst
+        if (self.thirst &lt; pauseThirst) {
+            remainderThirst = (pauseThirst mod 100);
+            roundThirst = (pauseThirst / 100);
+            round(roundThirst);
+            if (obj_water.waterLevel &gt;= roundThirst) {
+                obj_water.waterLevel -= roundThirst;
+                self.thirst = (1000 - remainderThirst);            
+                }
+            else obj_water.waterLevel = 0;
+            self.thirst = 0;        
+        }
+    }
+obj_control.alarm[1] = 0;
+}
 </string>
           </argument>
         </arguments>
