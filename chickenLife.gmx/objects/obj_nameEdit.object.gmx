@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>msg = get_string_async("What is this chicken's name?","Ms.McCluckface");
+            <string>msg = get_string_async("What is this chicken's name?",global.menuID.name);
 </string>
           </argument>
         </arguments>

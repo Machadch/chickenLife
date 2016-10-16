@@ -3,7 +3,7 @@ var exitTime = global.savedTime
 ini_open(working_directory + "save.ini");
 ini_write_real("Pause Date","Pause",exitTime);
 ini_write_real("Yard","feeder",obj_feeder.feedLevel);
-ini_write_real("Yard","feederMax",obj_feeder.feedMax);
+ini_write_real("Yard","feederMax",obj_feeder.maxFeed);
 ini_write_real("Yard","water",obj_water.waterLevel);
 ini_write_real("Yard","waterMax",obj_water.maxWater);
 ini_write_string("Yard","Door",obj_coopDoor.door);
