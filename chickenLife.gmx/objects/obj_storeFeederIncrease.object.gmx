@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_inventory.inventoryArray[1,0] &gt; 200) {
+            <string>if (obj_inventory.inventoryArray[1,0] &gt;= 200) {
     obj_inventory.inventoryArray[1,0] -= 200;
     obj_feeder.maxFeed += 10;
 }
