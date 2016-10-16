@@ -4,11 +4,11 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,18 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.chickenCount = 0;
-global.loadDiff = 0;
-global.menuID = 0;
-global.debug = 0;
-global.osPause = 0;
-global.eggsLaid = 0;
-global.savedTime = 0;
-global.eggsSpawned = 0;
-global.chickenArray[0,0] = 0;
-global.itemMenuID = 0;
-global.itemMax = 0;
-global.itemCurrent =0;
+            <string>draw_sprite_ext((global.itemMenuID).sprite_index,0,128,128,2,2,0,c_white,1);
+image_speed = 0
+draw_sprite(spr_profileBorder,0,128,128);
+draw_set_color(c_black);
+
+draw_text(224,128,"Max fill level: " + string(global.itemMax));
+draw_text(224,156,"Current fill level: " + string(global.itemCurrent));
 </string>
           </argument>
         </arguments>

@@ -8,6 +8,46 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ((global.menuID).hunger &gt;= 800) hungerLife = 4;
+else if ((global.menuID).hunger &gt;= 600 and (global.menuID).hunger &lt;= 799 ) hungerLife = 3;
+else if ((global.menuID).hunger &gt;= 400 and (global.menuID).hunger &lt;= 599 ) hungerLife = 2;
+else if ((global.menuID).hunger &gt;= 200 and (global.menuID).hunger &lt;= 399 ) hungerLife = 1;
+else hungerLife = 0;
+
+if ((global.menuID).thirst &gt;= 800) thirstLife = 4;
+else if ((global.menuID).thirst &gt;= 600 and (global.menuID).thirst &lt;= 799 ) thirstLife = 3;
+else if ((global.menuID).thirst &gt;= 400 and (global.menuID).thirst &lt;= 599 ) thirstLife = 2;
+else if ((global.menuID).thirst &gt;= 200 and (global.menuID).thirst &lt;= 399 ) thirstLife = 1;
+else thirstLife = 0;
+
+if ((global.menuID).layDate &lt; current_day) {
+laidValue = 'No';
+}
+else {
+laidValue = 'Yes';
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -28,15 +68,11 @@
             <string>draw_sprite_ext((global.menuID).sprite_index,0,128,128,2,2,0,c_white,1);
 image_speed = 0
 draw_sprite(spr_profileBorder,0,128,128);
+draw_set_color(c_black);
 draw_text(224,128,string((global.menuID).name));
 
-if ((global.menuID).hunger &gt;= 800) hungerLife = 4;
-else if ((global.menuID).hunger &gt;= 600 and (global.menuID).hunger &lt;= 799 ) hungerLife = 3;
-else if ((global.menuID).hunger &gt;= 400 and (global.menuID).hunger &lt;= 599 ) hungerLife = 2;
-else if ((global.menuID).hunger &gt;= 200 and (global.menuID).hunger &lt;= 399 ) hungerLife = 1;
-else hungerLife = 0;
 
-for(i = 0; i &lt; hungerLife; i++) {
+for(i = 0; i &lt; self.hungerLife; i++) {
     gapSize = (sprite_get_width(spr_hungerIcon) * i); 
     xPos = 224; 
     yPos = 288; 
@@ -44,14 +80,7 @@ for(i = 0; i &lt; hungerLife; i++) {
   }
 draw_text(32,288,"Hunger Level:");
 
-
-if ((global.menuID).thirst &gt;= 800) thirstLife = 4;
-else if ((global.menuID).thirst &gt;= 600 and (global.menuID).thirst &lt;= 799 ) thirstLife = 3;
-else if ((global.menuID).thirst &gt;= 400 and (global.menuID).thirst &lt;= 599 ) thirstLife = 2;
-else if ((global.menuID).thirst &gt;= 200 and (global.menuID).thirst &lt;= 399 ) thirstLife = 1;
-else thirstLife = 0;
-
-for(i = 0; i &lt; thirstLife; i++) {
+for(i = 0; i &lt; self.thirstLife; i++) {
     gapSize = (sprite_get_width(spr_thirstIcon) * i); 
     xPos = 224; 
     yPos = 448; 
@@ -59,12 +88,8 @@ for(i = 0; i &lt; thirstLife; i++) {
   }
 draw_text(32,448,"Thirst Level:");
 
-if ((global.menuID).layDate &lt; current_day) {
-draw_text(32,550,"Laid today: No");
-}
-else {
-draw_text(32,550,"Laid today: Yes");
-}
+
+draw_text(32,550,"Laid today: " + string(self.laidValue));
 </string>
           </argument>
         </arguments>
