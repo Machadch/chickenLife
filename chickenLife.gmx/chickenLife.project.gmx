@@ -12,6 +12,10 @@
       <sprite>sprites\spr_menuClose</sprite>
       <sprite>sprites\spr_sell</sprite>
       <sprite>sprites\spr_feedIncrease</sprite>
+      <sprite>sprites\spr_farmTools</sprite>
+      <sprite>sprites\spr_farmLivestock</sprite>
+      <sprite>sprites\spr_farmFeed</sprite>
+      <sprite>sprites\spr_farmReturn</sprite>
       <sprite>sprites\spr_waterIncrease</sprite>
       <sprite>sprites\spr_btnFarmStore</sprite>
       <sprite>sprites\spr_buyChicken</sprite>
@@ -144,11 +148,16 @@
     </objects>
     <objects name="control">
       <object>objects\obj_control</object>
+      <object>objects\obj_feedStoreControl</object>
       <object>objects\obj_globalHolder</object>
       <object>objects\obj_profileControl</object>
       <object>objects\obj_inventory</object>
+      <object>objects\obj_itemProfileControl</object>
     </objects>
     <objects name="town">
+      <object>objects\obj_farmMenuTools</object>
+      <object>objects\obj_farmMenuLivestock</object>
+      <object>objects\obj_farmMenuFeed</object>
       <object>objects\obj_storeWaterIncrease</object>
       <object>objects\obj_btnInvSell</object>
       <object>objects\obj_btnReturn</object>
@@ -156,11 +165,13 @@
       <object>objects\obj_btnFarmStore</object>
       <object>objects\obj_storeFeederIncrease</object>
       <object>objects\obj_btnBuyChicken</object>
+      <object>objects\obj_farmMenuBack</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_Menu</room>
     <room>rooms\rm_yard</room>
+    <room>rooms\rm_itemMenu</room>
     <room>rooms\rm_chickenProfile</room>
     <room>rooms\rm_nestBox</room>
     <room>rooms\rm_farmStore</room>
