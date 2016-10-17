@@ -78,10 +78,12 @@ if (feedLevel = 0) image_index = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.itemMenuID = self.id;
+            <string>if (room = rm_yard) {
+global.itemMenuID = self.id;
 global.itemMax = self.maxFeed
 global.itemCurrent = self.feedLevel;
 room_goto(rm_itemMenu);
+}
 </string>
           </argument>
         </arguments>

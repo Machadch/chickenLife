@@ -221,7 +221,7 @@ case 3: sprite_index = spr_chxDown; break;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scr_chickenClick();
+            <string>if (room = rm_yard) scr_chickenClick();
 </string>
           </argument>
         </arguments>

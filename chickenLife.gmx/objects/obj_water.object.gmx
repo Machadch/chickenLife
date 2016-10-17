@@ -50,11 +50,11 @@ image_speed = 0.10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (self.waterLevel &gt; 10){
+            <string>image_speed = 0.10;
+if (self.waterLevel &gt;= 10){
 sprite_index = spr_waterFull;
-image_speed = 0.10;
 }
-else if (self.waterLevel &lt; 10) sprite_index = spr_waterEmpty;
+else if (self.waterLevel &lt; 2) sprite_index = spr_waterEmpty;
 if (self.waterLevel &lt; 0) waterLevel = 0;
 </string>
           </argument>
@@ -78,10 +78,12 @@ if (self.waterLevel &lt; 0) waterLevel = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.itemMenuID = self.id;
-global.itemMax = self.maxWater
+            <string>if room = rm_yard {
+global.itemMenuID = self.id;
+global.itemMax = self.maxWater;
 global.itemCurrent = self.waterLevel;
 room_goto(rm_itemMenu);
+}
 </string>
           </argument>
         </arguments>
