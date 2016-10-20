@@ -128,9 +128,12 @@ alarm[1] = 60;
                 obj_feeder.feedLevel -= roundHunger;
                 self.hunger = (1000 - remainderHunger);            
                 }
-            else obj_feeder.feedLevel = 0;
+            else {
+            obj_feeder.feedLevel = 0;
             self.hunger = 0;
             }
+            }
+            else self.hunger -= pauseHunger;
         //Deal with thirst
             if (self.thirst &lt; pauseThirst) {
                 remainderThirst = (pauseThirst mod 1000);
@@ -143,6 +146,8 @@ alarm[1] = 60;
             else obj_water.waterLevel = 0;
             self.thirst = 0;        
         }
+        else self.thirst -= pauseThirst;
+        //Chance of egg spawn
     if (self.layDate &lt; current_day) {
         if (irandom(4) = 1) {
              global.eggsLaid += 1;
