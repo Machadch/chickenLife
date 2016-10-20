@@ -117,14 +117,13 @@ alarm[1] = 60;
             <string>if (global.osPause = 1) {
     global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
     if (global.loadDiff &gt; 2 ) {
-        pauseHunger = ((global.loadDiff * 30) *self.hungerDegrade);
+        pauseHunger = ((global.loadDiff * 30) * self.hungerDegrade);
         pauseThirst = ((global.loadDiff * 30) * self.thirstDegrade);
         //Deal with hunger
             if (self.hunger &lt; pauseHunger) {
-            remainderHunger = (pauseHunger mod 100);
-            roundHunger = (pauseHunger / 100);
+            remainderHunger = (pauseHunger mod 1000);
+            roundHunger = (pauseHunger / 1000);
             round(roundHunger);
-            roundHunger = roundHunger * 2;
             if (obj_feeder.feedLevel &gt;= roundHunger) {
                 obj_feeder.feedLevel -= roundHunger;
                 self.hunger = (1000 - remainderHunger);            
@@ -134,8 +133,8 @@ alarm[1] = 60;
             }
         //Deal with thirst
             if (self.thirst &lt; pauseThirst) {
-                remainderThirst = (pauseThirst mod 100);
-                roundThirst = (pauseThirst / 100);
+                remainderThirst = (pauseThirst mod 1000);
+                roundThirst = (pauseThirst / 1000);
                 round(roundThirst);
             if (obj_water.waterLevel &gt;= roundThirst) {
                 obj_water.waterLevel -= roundThirst;
@@ -198,7 +197,6 @@ case 1: sprite_index = spr_chxUp; break;
 case 2: sprite_index = spr_chxLeft; break;
 case 3: sprite_index = spr_chxDown; break;
 }
-
 </string>
           </argument>
         </arguments>

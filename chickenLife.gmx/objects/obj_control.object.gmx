@@ -93,7 +93,8 @@ global.osPause = 0;
             <kind>1</kind>
             <string>if (global.osPause == 0) {
 global.savedTime = date_current_datetime();
-alarm[0] = 150;
+alarm[0] = 600;
+scr_saveINI();
 }
 </string>
           </argument>
