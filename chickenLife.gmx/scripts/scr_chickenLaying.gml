@@ -21,4 +21,5 @@ else if (self.location == "roost" and self.layDate >= current_day){
     }
 else {
 state = states.idle;
+self.visible = true;
 }

@@ -12,9 +12,9 @@ if (file_exists("save.ini")) {
     }
 
 obj_feeder.feedLevel = ini_read_real("Yard","feeder",10);
-obj_feeder.feedMax = ini_read_real("Yard","feederMax",10);
+obj_feeder.maxFeed = ini_read_real("Yard","feederMax",10);
 obj_water.waterLevel = ini_read_real("Yard","water",10);
-obj_feeder.waterMax = ini_read_real("Yard","waterMax",10);
+obj_water.maxWater = ini_read_real("Yard","waterMax",10);
 obj_inventory.inventoryArray[0,0 ] = ini_read_real("Inventory","egg",0);
 obj_inventory.inventoryArray[1,0] = ini_read_real("Inventory","currency",0);
 obj_coopDoor.door = ini_read_string("Yard","Door","open");
