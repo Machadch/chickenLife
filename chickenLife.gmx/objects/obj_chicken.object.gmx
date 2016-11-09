@@ -115,40 +115,51 @@ alarm[1] = 60;
           <argument>
             <kind>1</kind>
             <string>if (global.osPause = 1) {
-    global.loadDiff = date_second_span(date_current_datetime(),global.savedTime);
+    global.loadDiff = date_second_span(date_current_datetime(),global.savedTime); //use seconds because it is easy to calculate the difference against steps*hunger
     if (global.loadDiff &gt; 2 ) {
         pauseHunger = ((global.loadDiff * 30) * self.hungerDegrade);
         pauseThirst = ((global.loadDiff * 30) * self.thirstDegrade);
+        remainderHunger = (pauseHunger mod 1000); //To remove from feeder
+        roundHunger = (pauseHunger / 1000); //Get amount to deduct from chicken
+        roundHunger = round(roundHunger);
+        roundHunger = (roundHunger * 2) //Because each bite of food is 500 and takes two to fill
+        remainderThirst = (pauseThirst mod 1000);
+        roundThirst = (pauseThirst / 1000);
+        round(roundThirst);
+        
         //Deal with hunger
             if (self.hunger &lt; pauseHunger) {
-            remainderHunger = (pauseHunger mod 1000);
-            roundHunger = (pauseHunger / 1000);
-            round(roundHunger);
-            if (obj_feeder.feedLevel &gt;= roundHunger) {
-                obj_feeder.feedLevel -= roundHunger;
-                self.hunger = (1000 - remainderHunger);            
+                if (obj_feeder.feedLevel &gt; roundHunger) {
+                    obj_feeder.feedLevel -= roundHunger;
+                    self.hunger = (1000 - remainderHunger);            
                 }
-            else {
-            obj_feeder.feedLevel = 0;
-            self.hunger = 0;
-            }
+                else if (obj_feeder.feedLevel = roundHunger) {
+                obj_feeder.feedLevel = 0;
+                self.hunger = (1000 - remainderHunger);
+                }
+                else if (obj_feeder.feedLevel &lt; roundHunger){
+                obj_feeder.feedLevel = 0;
+                self.hunger = 0;
+                } 
             }
             else self.hunger -= pauseHunger;
         //Deal with thirst
             if (self.thirst &lt; pauseThirst) {
-                remainderThirst = (pauseThirst mod 1000);
-                roundThirst = (pauseThirst / 1000);
-                round(roundThirst);
-            if (obj_water.waterLevel &gt;= roundThirst) {
-                obj_water.waterLevel -= roundThirst;
-                self.thirst = (1000 - remainderThirst);            
+                if (obj_water.waterLevel &gt;= roundThirst) {
+                    obj_water.waterLevel -= roundThirst;
+                    self.thirst -= remainderThirst;            
                 }
-            else obj_water.waterLevel = 0;
-            self.thirst = 0;        
-        }
-        else self.thirst -= pauseThirst;
+                else if (self.thirst = pauseThirst) {
+                    obj_water.waterLevel -= roundThirst;
+                    self.thirst -= remainderThirst; 
+                }
+                else if (obj_water.waterLevel &lt; roundThirst) {
+                    obj_water.waterLevel = 0;
+                    self.thirst = 0;        
+                }
+            else self.thirst -= pauseThirst;
         //Chance of egg spawn
-    if (self.layDate &lt; current_day) {
+if (self.layDate != current_day) {
         if (irandom(4) = 1) {
              global.eggsLaid += 1;
              self.layDate = current_day;
@@ -156,6 +167,7 @@ alarm[1] = 60;
         }
     }
     obj_control.alarm[1] = 0;
+    }
 }
 </string>
           </argument>

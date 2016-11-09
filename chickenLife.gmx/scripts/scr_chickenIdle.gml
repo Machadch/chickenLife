@@ -10,7 +10,7 @@ state = states.hungry;
 else if (self.thirst <= 0 and self.thirst < self.hunger) {
 state = states.thirsty;
 } 
-else if (self.thirst > 500 and self.hunger > 500 and self.layDate < current_day){
+else if (self.thirst > 500 and self.hunger > 500 and self.layDate != current_day){
     state = states.laying;
 }
 else if (self.location = 'roost' and self.layDate >= current_day) {
