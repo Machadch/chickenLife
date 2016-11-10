@@ -90,6 +90,8 @@ draw_text(32,448,"Thirst Level:");
 
 
 draw_text(32,550,"Laid today: " + string(self.laidValue));
+
+draw_text(32,600,"Gender: " + string(global.menuID));
 </string>
           </argument>
         </arguments>

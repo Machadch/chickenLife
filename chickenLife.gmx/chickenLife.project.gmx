@@ -176,6 +176,7 @@
     <room>rooms\rm_nestBox</room>
     <room>rooms\rm_farmStore</room>
     <room>rooms\rm_town</room>
+    <room>rooms\rm_incubator</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

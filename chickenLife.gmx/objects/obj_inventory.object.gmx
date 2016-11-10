@@ -30,6 +30,15 @@
 // 1,0 = currency
 inventoryArray[0,0] = 0;
 inventoryArray[1,0] = 0;
+
+//egg array
+// 0,0 = Egg count
+// X = ID
+// X,1 = Gender
+// X,2 = Parent 1 breed
+// X,3 = Parent 2 breed
+// X,4 = Days incubated
+eggArray[0,0] = 0;
 </string>
           </argument>
         </arguments>

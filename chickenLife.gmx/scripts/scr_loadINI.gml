@@ -7,7 +7,7 @@ if (file_exists("save.ini")) {
     for (i = 1; i < chickenSpawn; i++) {
         scr_chickenSpawner(ini_read_real("Chicken" + (string(i)),"hunger",250),ini_read_real("Chicken" + (string(i)),
         "thirst",250),ini_read_real("Chicken" + (string(i)),"layDate",0),ini_read_string("Chicken" + (string(i)),"location","yard"),
-        ini_read_string("Chicken" + (string(i)),"name","chicken")
+        ini_read_string("Chicken" + (string(i)),"name","chicken"),ini_read_string("Chicken" + (string(i)),"gender","female")
         );
     }
 
@@ -19,6 +19,7 @@ obj_inventory.inventoryArray[0,0 ] = ini_read_real("Inventory","egg",0);
 obj_inventory.inventoryArray[1,0] = ini_read_real("Inventory","currency",0);
 obj_coopDoor.door = ini_read_string("Yard","Door","open");
 global.eggsLaid = ini_read_real("Chicken global","eggsLaid",0);
+global.savedDay = ini_read_real("Global","Day",current_day);
 global.osPause = 1;
 obj_control.alarm[1] = 10;
 

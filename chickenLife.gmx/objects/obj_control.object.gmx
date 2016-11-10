@@ -31,7 +31,6 @@ else if (!file_exists("save.ini")){
 scr_chickenSpawner(1000,1000,0,"yard","chicken");
 scr_chickenSpawner(1000,1000,0,"yard","chicken");
 }
-scr_predatorCheck();
 pauseHunger = 0;
 roundHunger = 0;
 pauseThirst = 0;
@@ -119,19 +118,19 @@ scr_saveINI();
             <string>if (os_is_paused()) {
     global.osPause = 1;
     obj_chicken.alarm[0] = 30;
-    scr_saveINI();
-}
+};
 
 if (irandom(455) = 5) scr_cloudSpawn();
 
 if (room = rm_nestBox and global.eggsLaid &gt; global.eggsSpawned) {
     instance_create(32,32,obj_egg);
     global.eggsSpawned += 1;
-}
+};
 
-
-
-
+if (global.savedDay != current_day) {
+    scr_predatorCheck();
+    global.savedDay = current_day;
+};
 </string>
           </argument>
         </arguments>

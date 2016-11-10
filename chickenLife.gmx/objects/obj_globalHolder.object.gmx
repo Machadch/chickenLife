@@ -37,6 +37,7 @@ global.chickenArray[0,0] = 0;
 global.itemMenuID = 0;
 global.itemMax = 0;
 global.itemCurrent =0;
+global.savedDay = 0;
 </string>
           </argument>
         </arguments>
