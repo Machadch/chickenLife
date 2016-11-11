@@ -50,6 +50,11 @@
       <sprite>sprites\spr_waterEmpty</sprite>
       <sprite>sprites\spr_chickenInvis</sprite>
       <sprite>sprites\spr_predStrike</sprite>
+      <sprites name="incubator">
+        <sprite>sprites\incubatorSlot</sprite>
+        <sprite>sprites\spr_incubatorFourSlot</sprite>
+        <sprite>sprites\spr_eggMenuBG</sprite>
+      </sprites>
     </sprites>
     <sprites name="menus">
       <sprites name="yardMenu">
@@ -133,6 +138,14 @@
         <object>objects\nestBox</object>
         <object>objects\obj_egg</object>
       </objects>
+      <objects name="incubator">
+        <object>objects\obj_incubator</object>
+        <object>objects\obj_incubatorSlot1</object>
+        <object>objects\obj_incubatorSlot2</object>
+        <object>objects\obj_incubatorSlot3</object>
+        <object>objects\obj_incubatorSlot4</object>
+        <object>objects\obj_eggMenuBG</object>
+      </objects>
     </objects>
     <objects name="decoration">
       <object>objects\obj_fence</object>
@@ -153,6 +166,7 @@
       <object>objects\obj_profileControl</object>
       <object>objects\obj_inventory</object>
       <object>objects\obj_itemProfileControl</object>
+      <object>objects\obj_incubatorControl</object>
     </objects>
     <objects name="town">
       <object>objects\obj_farmMenuTools</object>

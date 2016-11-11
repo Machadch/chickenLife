@@ -21,7 +21,9 @@ ini_write_real("Chicken" + (string(i)),"thirst",global.chickenArray[i,1]);
 ini_write_real("Chicken" + (string(i)),"layDate",global.chickenArray[i,2]);
 ini_write_string("Chicken" + (string(i)),"location",global.chickenArray[i,3]);
 ini_write_string("Chicken" + (string(i)),"name",global.chickenArray[i,4]);
-ini_write_string("Chiken" + (string(i)),"gender",global.chickenArray[i,6]);
+ini_write_string("Chicken" + (string(i)),"gender",global.chickenArray[i,6]);
+ini_write_string("Chicken" + (string(i)),"breed",global.chickenArray[i,7]);
+ini_write_string("Chicken" + (string(i)),"breed",global.chickenArray[i,8]);
 }
 
 ini_close();

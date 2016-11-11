@@ -41,6 +41,8 @@ location = 'yard';
 chickenMenu = 'closed';
 name = 'Chicken' + string(chickenID);
 gender = 'female';
+breed = 'Americana';
+lifeStage = 'Adult';
 </string>
           </argument>
         </arguments>

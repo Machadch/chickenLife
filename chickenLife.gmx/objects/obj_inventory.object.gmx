@@ -38,6 +38,8 @@ inventoryArray[1,0] = 0;
 // X,2 = Parent 1 breed
 // X,3 = Parent 2 breed
 // X,4 = Days incubated
+// X,5 = In incubator. 1 = yes 0 = no
+// X,6 = Incubator slot.
 eggArray[0,0] = 0;
 </string>
           </argument>

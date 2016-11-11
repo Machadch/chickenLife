@@ -7,7 +7,8 @@ if (file_exists("save.ini")) {
     for (i = 1; i < chickenSpawn; i++) {
         scr_chickenSpawner(ini_read_real("Chicken" + (string(i)),"hunger",250),ini_read_real("Chicken" + (string(i)),
         "thirst",250),ini_read_real("Chicken" + (string(i)),"layDate",0),ini_read_string("Chicken" + (string(i)),"location","yard"),
-        ini_read_string("Chicken" + (string(i)),"name","chicken"),ini_read_string("Chicken" + (string(i)),"gender","female")
+        ini_read_string("Chicken" + (string(i)),"name","chicken"),ini_read_string("Chicken" + (string(i)),"gender","female"),
+        ini_read_string("Chicken" + (string(i)),"breed",'Americana'),ini_read_string("Chicken" + (string(i)),"lifeStage","Adult")
         );
     }
 
