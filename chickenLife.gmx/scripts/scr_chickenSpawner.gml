@@ -13,8 +13,8 @@ chx_inst.layDate= argument[2];
 chx_inst.location = argument[3];
 chx_inst.name = argument[4];
 chx_inst.gender = argument[5];
-chx_inst.breed = argument[7];
-chx_inst.lifeStage = argument[8];
+chx_inst.breed = argument[6];
+chx_inst.lifeStage = argument[7];
 
 global.chickenArray[sCount,0] = argument[0];
 global.chickenArray[sCount,1] = argument[1];
@@ -23,8 +23,8 @@ global.chickenArray[sCount,3] = argument[3];
 global.chickenArray[sCount,4] = argument[4];
 global.chickenArray[sCount,5] = chx_inst;
 global.chickenArray[sCount,6] = argument[5];
-global.chickenArray[sCount,7] = argument[7];
-global.chickenArray[sCount,8] = argument[8];
+global.chickenArray[sCount,7] = argument[6];
+global.chickenArray[sCount,8] = argument[7];
 
 
 /*
