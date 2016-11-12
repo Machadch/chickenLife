@@ -3,6 +3,7 @@ if (menu = 'closed') {
     instance_create(96,32,obj_btnFoodMenu);
     instance_create(416,32,obj_btnDebug);
     instance_create(150,32,obj_btnInventory);
+    instance_create(300,32,obj_btnIncubator);
     menu = 'open';
 }
 else if (menu = 'open') {
@@ -23,5 +24,7 @@ else if (menu = 'open') {
     with (obj_btnDebug)
     instance_destroy();
     with (obj_btnInventory)
+    instance_destroy();
+    with (obj_btnIncubator)
     instance_destroy();
 }

@@ -66,6 +66,7 @@
         <sprite>sprites\spr_subMenu</sprite>
         <sprite>sprites\spr_btnInventory</sprite>
         <sprite>sprites\spr_btnFood</sprite>
+        <sprite>sprites\spr_btnIncubator</sprite>
       </sprites>
       <sprite>sprites\spr_btnStart</sprite>
       <sprite>sprites\spr_warnExe</sprite>
@@ -121,6 +122,7 @@
       <object>objects\obj_menuBG</object>
       <object>objects\obj_subMenu</object>
       <object>objects\obj_btnFoodMenu</object>
+      <object>objects\obj_btnIncubator</object>
       <object>objects\obj_btnDebug</object>
       <object>objects\obj_btnMenu</object>
       <object>objects\obj_nameEdit</object>
