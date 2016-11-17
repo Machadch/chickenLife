@@ -140,6 +140,7 @@
       <objects name="nestBox">
         <object>objects\nestBox</object>
         <object>objects\obj_egg</object>
+        <object>objects\obj_eggInv</object>
       </objects>
       <objects name="incubator">
         <object>objects\obj_incubator</object>

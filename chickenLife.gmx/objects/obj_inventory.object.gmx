@@ -42,13 +42,16 @@ inventoryArray[2,0] = 0;
 // X,4 = In incubator. 1 = yes 0 = no
 // X,5 = Incubator slot
 // X,6 = Collected. 1 = yes 0 = no
-eggArray[0,0] = 0;
-eggArray[1,0] = 0;
-eggArray[2,0] = 0;
-eggArray[3,0] = 0;
-eggArray[4,0] = 0;
-eggArray[5,0] = 0;
-eggArray[6,0] = 0;
+// X,7 = Fertilized
+
+eggArray[0,0] = 1;
+eggArray[1,1] = 0;
+eggArray[1,2] = 0;
+eggArray[1,3] = 0;
+eggArray[1,4] = 0;
+eggArray[1,5] = 0;
+eggArray[1,6] = 0;
+eggArray[1,7] = 'yes';
 </string>
           </argument>
         </arguments>

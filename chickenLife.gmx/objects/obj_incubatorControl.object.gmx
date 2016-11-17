@@ -41,6 +41,7 @@ column2 = 128;
 column3 = 224;
 column4 = 320;
 column5 = 416;
+scr_eggInv();
 </string>
           </argument>
         </arguments>

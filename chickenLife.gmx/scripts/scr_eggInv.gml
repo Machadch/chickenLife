@@ -7,33 +7,63 @@
 // X,4 = In incubator. 1 = yes 0 = no
 // X,5 = Incubator slot
 // X,6 = Collected. 1 = yes 0 = no
-tmpEggCount = eggArray[0,0];
-tmpGender = 'female';
-tmpColor = 'white';
-tmpBreed = 'Americana';
-tmpDaysIncubated = 0;;
-tmpInInc = 'no';
-tmpCollected = 'no';
+// X,7 = Fertilized
+tmpEggCount = obj_inventory.eggArray[0,0];
+tmpX = 32;
+tmpY = 64;
+eggInvSlot = 1;
 
 var i;
-for (i = 1; i < tmpEggCount; i++) {
-    tmpGender = eggArray[i,0];
-    tmpColor = eggArray[i,1];
-    tmpBreed =eggArray[i,2];
-    tmpDaysIncubater = eggArray[i,3];
-    tmpInInc = eggArray[i,4];
-    tmpCollected = eggArray[i,6];
-
-
-
-    
+for (i = 1; i <= tmpEggCount; i++) {
+if (obj_inventory.eggArray[i,7] == 'yes') {
+    if (eggInvSlot == 1) {
+            tmpX = obj_incubatorControl.column1;
+            tmpy = obj_incubatorControl.row1;
+            }
+        else if (eggInvSlot == 2) {
+            tmpX = obj_incubatorControl.column2;
+            tmpy = obj_incubatorControl.row1;
+            }
+        else if (eggInvSlot == 3) {
+            tmpX = obj_incubatorControl.column3;
+            tmpy = obj_incubatorControl.row1;
+            }
+        else if (eggInvSlot == 4) {
+            tmpX = obj_incubatorControl.column4;
+            tmpy = obj_incubatorControl.row1;
+            }
+        else if (eggInvSlot == 5) {
+            tmpX = obj_incubatorControl.column5;
+            tmpy = obj_incubatorControl.row1;
+            }
+        else if (eggInvSlot == 6) {
+            tmpX = obj_incubatorControl.column1;
+            tmpy = obj_incubatorControl.row2;
+            }
+        else if (eggInvSlot == 7) {
+            tmpX = obj_incubatorControl.column2;
+            tmpy = obj_incubatorControl.row2;
+            }
+        else if (eggInvSlot == 8) {
+            tmpX = obj_incubatorControl.column3;
+            tmpy = obj_incubatorControl.row2;
+            }
+        else if (eggInvSlot == 9) {
+            tmpX = obj_incubatorControl.column4;
+            tmpy = obj_incubatorControl.row2;
+            }
+        else if (eggInvSlot == 10) {
+            tmpX = obj_incubatorControl.column5;
+            tmpy = obj_incubatorControl.row2;
+            }
+        
+    var tmpEgg = instance_create(tmpX,tmpY,obj_eggInv); 
+        tmpEgg.Gender = obj_inventory.eggArray[i,0];
+        tmpEgg.Color = obj_inventory.eggArray[i,1];
+        tmpEgg.Breed =obj_inventory.eggArray[i,2];
+        tmpEgg.DaysIncubater = obj_inventory.eggArray[i,3];
+        tmpEgg.InInc = obj_inventory.eggArray[i,4];
+        tmpEgg.Collected = obj_inventory.eggArray[i,6];
+        eggInvSlot += 1;   
+    }
 }
-
-/*
-Assumed array spawned positions
-32,512 128,512 224,512 320,512 416,512
-
-608
-
-736
-\*
