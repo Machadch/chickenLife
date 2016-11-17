@@ -102,6 +102,7 @@
     <scripts name="menuLogic">
       <script>scripts\scr_subMenuFood.gml</script>
       <script>scripts\scr_menu.gml</script>
+      <script>scripts\scr_eggInv.gml</script>
     </scripts>
     <scripts name="Load/Save">
       <script>scripts\scr_loadINI.gml</script>
