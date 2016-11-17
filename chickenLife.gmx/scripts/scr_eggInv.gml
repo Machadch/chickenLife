@@ -18,43 +18,43 @@ for (i = 1; i <= tmpEggCount; i++) {
 if (obj_inventory.eggArray[i,7] == 'yes') {
     if (eggInvSlot == 1) {
             tmpX = obj_incubatorControl.column1;
-            tmpy = obj_incubatorControl.row1;
+            tmpY = obj_incubatorControl.row1;
             }
         else if (eggInvSlot == 2) {
             tmpX = obj_incubatorControl.column2;
-            tmpy = obj_incubatorControl.row1;
+            tmpY = obj_incubatorControl.row1;
             }
         else if (eggInvSlot == 3) {
             tmpX = obj_incubatorControl.column3;
-            tmpy = obj_incubatorControl.row1;
+            tmpY = obj_incubatorControl.row1;
             }
         else if (eggInvSlot == 4) {
             tmpX = obj_incubatorControl.column4;
-            tmpy = obj_incubatorControl.row1;
+            tmpY = obj_incubatorControl.row1;
             }
         else if (eggInvSlot == 5) {
             tmpX = obj_incubatorControl.column5;
-            tmpy = obj_incubatorControl.row1;
+            tmpY = obj_incubatorControl.row1;
             }
         else if (eggInvSlot == 6) {
             tmpX = obj_incubatorControl.column1;
-            tmpy = obj_incubatorControl.row2;
+            tmpY = obj_incubatorControl.row2;
             }
         else if (eggInvSlot == 7) {
             tmpX = obj_incubatorControl.column2;
-            tmpy = obj_incubatorControl.row2;
+            tmpY = obj_incubatorControl.row2;
             }
         else if (eggInvSlot == 8) {
             tmpX = obj_incubatorControl.column3;
-            tmpy = obj_incubatorControl.row2;
+            tmpY = obj_incubatorControl.row2;
             }
         else if (eggInvSlot == 9) {
             tmpX = obj_incubatorControl.column4;
-            tmpy = obj_incubatorControl.row2;
+            tmpY = obj_incubatorControl.row2;
             }
         else if (eggInvSlot == 10) {
             tmpX = obj_incubatorControl.column5;
-            tmpy = obj_incubatorControl.row2;
+            tmpY = obj_incubatorControl.row2;
             }
         
     var tmpEgg = instance_create(tmpX,tmpY,obj_eggInv); 

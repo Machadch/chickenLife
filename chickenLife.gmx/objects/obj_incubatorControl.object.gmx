@@ -34,8 +34,8 @@ Assumed array spawned positions
 736
 */
 row1 = 32;
-row2 = 608
-row2 = 736;
+row2 = 608;
+row3 = 736;
 column1 = 64;
 column2 = 128;
 column3 = 224;
