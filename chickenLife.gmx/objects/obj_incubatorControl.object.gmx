@@ -33,7 +33,7 @@ Assumed array spawned positions
 
 736
 */
-row1 = 32;
+row1 = 512;
 row2 = 608;
 row3 = 736;
 column1 = 64;

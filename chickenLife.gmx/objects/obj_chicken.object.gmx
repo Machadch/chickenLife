@@ -164,8 +164,17 @@ alarm[1] = 60;
         //Chance of egg spawn
 if (self.layDate != current_day) {
         if (irandom(4) = 1) {
-             global.eggsLaid += 1;
-             self.layDate = current_day;
+            obj_inventory.eggArray[0,0] += 1;
+            var i;
+            i = obj_inventory.eggArray[0,0];
+            obj_inventory.eggArray[i,0] = irandom(1);
+            obj_inventory.eggArray[i,1] = 'white'
+            obj_inventory.eggArray[i,2] = 'americana';
+            obj_inventory.eggArray[i,3] = 0;
+            obj_inventory.eggArray[i,4] = 0;
+            obj_inventory.eggArray[i,5] = 0;
+            obj_inventory.eggArray[i,6] = 0;
+            obj_inventory.eggArray[i,7] = 'yes';
             }
         }
     }

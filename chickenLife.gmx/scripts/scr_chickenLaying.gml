@@ -9,10 +9,20 @@ if (self.thirst > 750 and self.hunger > 750 and self.layDate != current_day) {
     else if (self.location == "roost" and self.layDate != current_day){
     self.x = 128;
     self.y = 448;
-    global.eggsLaid += 1;
     self.layDate = current_day;
     self.state = states.idle;
     self.alarm[2] = 60;
+    obj_inventory.eggArray[0,0] += 1;
+    var i;
+    i = obj_inventory.eggArray[0,0];
+    obj_inventory.eggArray[i,0] = irandom(1);
+    obj_inventory.eggArray[i,1] = 'white'
+    obj_inventory.eggArray[i,2] = 'americana';
+    obj_inventory.eggArray[i,3] = 0;
+    obj_inventory.eggArray[i,4] = 0;
+    obj_inventory.eggArray[i,5] = 0;
+    obj_inventory.eggArray[i,6] = 0;
+    obj_inventory.eggArray[i,7] = 'yes';
     }
 }
 else if (self.location == "roost" and self.layDate = current_day){ 

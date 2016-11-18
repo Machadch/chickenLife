@@ -35,7 +35,7 @@ inventoryArray[2,0] = 0;
 
 //egg array
 // X = ID
-// X,0 = Gender
+// X,0 = Gender. 0 = female, 1 = male
 // X,1 = Color
 // X,2 = Breed
 // X,3 = Days incubated
@@ -43,6 +43,7 @@ inventoryArray[2,0] = 0;
 // X,5 = Incubator slot
 // X,6 = Collected. 1 = yes 0 = no
 // X,7 = Fertilized
+//X,8
 
 eggArray[0,0] = 1;
 eggArray[1,1] = 0;

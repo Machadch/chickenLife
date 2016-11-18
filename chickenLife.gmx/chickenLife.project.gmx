@@ -171,6 +171,7 @@
       <object>objects\obj_inventory</object>
       <object>objects\obj_itemProfileControl</object>
       <object>objects\obj_incubatorControl</object>
+      <object>objects\obj_nestBoxControl</object>
     </objects>
     <objects name="town">
       <object>objects\obj_farmMenuTools</object>

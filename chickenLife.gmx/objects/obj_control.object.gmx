@@ -122,10 +122,10 @@ scr_saveINI();
 
 if (irandom(455) = 5) scr_cloudSpawn();
 
-if (room = rm_nestBox and global.eggsLaid &gt; global.eggsSpawned) {
-    instance_create(32,32,obj_egg);
-    global.eggsSpawned += 1;
-};
+//if (room = rm_nestBox and global.eggsLaid &gt; global.eggsSpawned) {
+//    instance_create(32,32,obj_egg);
+//    global.eggsSpawned += 1;
+//};
 
 if (global.savedDay != current_day) {
     scr_predatorCheck();
