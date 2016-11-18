@@ -27,10 +27,10 @@ for (i = 1; i <= global.chickenCount; i++) {
 tmpEggCount = obj_inventory.eggArray[0,0];
 ini_write_real("Egg","Count",obj_inventory.eggArray[0,0]);
 var e;
-for (e = 1; e <= tmpEggCount; i++) {
+for (e = 1; e <= tmpEggCount; e++) {
         ini_write_real("Egg" + (string(e)),"ID",obj_inventory.eggArray[e,0]);
-        ini_write_real("Egg" + (string(e)),"Color",obj_inventory.eggArray[e,1]);
-        ini_write_real("Egg" + (string(e)),"Breed",obj_inventory.eggArray[e,2]);
+        ini_write_string("Egg" + (string(e)),"Color",obj_inventory.eggArray[e,1]);
+        ini_write_string("Egg" + (string(e)),"Breed",obj_inventory.eggArray[e,2]);
         ini_write_real("Egg" + (string(e)),"Days incubated",obj_inventory.eggArray[e,3]);
         ini_write_real("Egg" + (string(e)),"In Incubator",obj_inventory.eggArray[e,4]);
         ini_write_real("Egg" + (string(e)),"Incubator slot",obj_inventory.eggArray[e,5]);

@@ -15,6 +15,7 @@ if (self.thirst > 750 and self.hunger > 750 and self.layDate != current_day) {
     obj_inventory.eggArray[0,0] += 1;
     var i;
     i = obj_inventory.eggArray[0,0];
+    randomize();
     obj_inventory.eggArray[i,0] = irandom(1);
     obj_inventory.eggArray[i,1] = 'white'
     obj_inventory.eggArray[i,2] = 'americana';
@@ -22,7 +23,7 @@ if (self.thirst > 750 and self.hunger > 750 and self.layDate != current_day) {
     obj_inventory.eggArray[i,4] = 0;
     obj_inventory.eggArray[i,5] = 0;
     obj_inventory.eggArray[i,6] = 0;
-    obj_inventory.eggArray[i,7] = 'yes';
+    obj_inventory.eggArray[i,7] = 1;
     }
 }
 else if (self.location == "roost" and self.layDate = current_day){ 

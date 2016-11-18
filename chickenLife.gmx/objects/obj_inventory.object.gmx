@@ -45,14 +45,7 @@ inventoryArray[2,0] = 0;
 // X,7 = Fertilized
 //X,8
 
-eggArray[0,0] = 1;
-eggArray[1,1] = 0;
-eggArray[1,2] = 0;
-eggArray[1,3] = 0;
-eggArray[1,4] = 0;
-eggArray[1,5] = 0;
-eggArray[1,6] = 0;
-eggArray[1,7] = 'yes';
+eggArray[0,0] = 0;
 </string>
           </argument>
         </arguments>

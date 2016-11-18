@@ -7,7 +7,7 @@
 // X,4 = In incubator. 1 = yes 0 = no
 // X,5 = Incubator slot
 // X,6 = Collected. 1 = yes 0 = no
-// X,7 = Fertilized
+// X,7 = Fertilized 1 = yes 0 = no
 tmpEggCount = obj_inventory.eggArray[0,0];
 tmpX = 32;
 tmpY = 64;
@@ -15,7 +15,7 @@ eggInvSlot = 1;
 
 var i;
 for (i = 1; i <= tmpEggCount; i++) {
-if (obj_inventory.eggArray[i,7] == 'yes') {
+if (obj_inventory.eggArray[i,7] == 1) {
     if (eggInvSlot == 1) {
             tmpX = obj_incubatorControl.column1;
             tmpY = obj_incubatorControl.row1;

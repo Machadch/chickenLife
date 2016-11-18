@@ -19,7 +19,7 @@ if (file_exists("save.ini")) {
 tmpEggCount = (ini_read_real("Egg","Count",0));
 obj_inventory.eggArray[0,0] = ini_read_real("Egg","Count",0);
 var e;
-for (e = 1; e <= tmpEggCount; i++) {
+for (e = 1; e <= tmpEggCount; e++) {
  ini_read_real("Egg" + (string(e)),"ID",obj_inventory.eggArray[e,0]);
         obj_inventory.eggArray[e,1] = ini_read_string("Egg"+ (string(e)),"Color","White");
         obj_inventory.eggArray[e,2] = ini_read_string("Egg" + (string(e)),"Breed","Americana");
