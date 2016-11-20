@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>selected = false;
+eggArrayID = 0;
 
 </string>
           </argument>
@@ -79,8 +80,42 @@ if (selected) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>selected = false;
-global.canSelect = true;
+            <string>if (selected = true) {
+    selected = false;
+    global.canSelect = true;
+    if (instance_position(mouse_x,mouse_y,obj_incubatorSlot1) and obj_incubatorSlot1.open){
+        obj_inventory.eggArray[self.eggArrayID,4] = 1;
+        obj_inventory.eggArray[self.eggArrayID,5] = 1;
+        self.x = 112;
+        self.y = 176;
+        obj_incubatorSlot1.open = false;
+    }
+    else if (instance_position(mouse_x,mouse_y,obj_incubatorSlot2)and obj_incubatorSlot2.open){
+        obj_inventory.eggArray[self.eggArrayID,4] = 1;
+        obj_inventory.eggArray[self.eggArrayID,5] = 2;
+        self.x = 176;
+        self.y = 176;
+        obj_incubatorSlot2.open = false;
+    }
+    else if (instance_position(mouse_x,mouse_y,obj_incubatorSlot3)and obj_incubatorSlot3.open){
+        obj_inventory.eggArray[self.eggArrayID,4] = 1;
+        obj_inventory.eggArray[self.eggArrayID,5] = 3;
+        self.x = 240;
+        self.y = 176;
+        obj_incubatorSlot3.open = false;
+    }
+    else if (instance_position(mouse_x,mouse_y,obj_incubatorSlot4)and obj_incubatorSlot4.open){
+        obj_inventory.eggArray[self.eggArrayID,4] = 1;
+        obj_inventory.eggArray[self.eggArrayID,5] = 4;
+        self.x = 304;
+        self.y = 176;
+        obj_incubatorSlot4.open = false;
+    }
+    else {
+        self.x = spawnX;
+        self.y = spawnY;
+    }
+}
 </string>
           </argument>
         </arguments>
