@@ -15,7 +15,7 @@ eggInvSlot = 1;
 
 var i;
 for (i = 1; i <= tmpEggCount; i++) {
-if (obj_inventory.eggArray[i,7] == 1) {
+if (obj_inventory.eggArray[i,7] == 1 and obj_inventory.eggArray[i,6] == 1) {
     if (eggInvSlot == 1) {
             tmpX = obj_incubatorControl.column1;
             tmpY = obj_incubatorControl.row1;
